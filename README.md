@@ -13,6 +13,8 @@
 * [Struct](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#struct)
 * [Arrays](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#arrays)
 * [Pointer vs Arrays](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#pointer-vs-arrays)
+* [Array of Pointers](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#array-of-pointers)
+* [Pointer to Pointer (Multiple Indirection)](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#pointer-to-pointer-(multiple-indirection))
 
 # Basics
 
@@ -685,21 +687,24 @@ using namespace std;
 
 const int SIZE = 3;
 
-int main (int argc, const char * argv[])
-{
+void showExample08(){
     int  array[SIZE] = {111, 222, 333};
     for (register int i = 0; i < SIZE; i++)
     {
         cout << "Value of array[" << i << "] = ";
         cout << *array << endl;
- 
+        
         //set values - An array name generates a pointer constant
         *array = i;    // This is a correct syntax
         //array++;        This is incorrect.
     }
-    return 0;
 }
 
+int main (int argc, const char * argv[])
+{
+    showExample08();
+    return 0;
+}
 ```
 
 Result
@@ -708,7 +713,7 @@ Value of array[0] = 111
 Value of array[1] = 0
 Value of array[2] = 1
 
-Internal Array values
+** Internal Array values
 Value of array[0] = 111
 Value of array[1] = 222
 Value of array[2] = 333
@@ -726,22 +731,102 @@ Value of array[1] = 222
 Value of array[2] = 333
 ```
 
-## 
+## Array of Pointers
 ```cpp
+#include <iostream>
+
+using namespace std;
+const int MAX = 5;
+
+void showExample09(){
+    int nums[MAX] = {11,22,33,44,55};
+    int *p[MAX];
+    
+    for(register int i = 0; i< MAX ; i++ ){
+        cout << "p["<< i << "]= &nums["<<i<<"]"<<endl;
+        p[i] = &nums[i];
+    }
+    
+    for(register int i = 0; i< MAX ; i++ ){
+        cout << "*p["<< i << "]= "<< *p[i]<<endl;
+    }
+}
+
+int main(int argc, const char * argv[]) {
+    showExample09();
+    return 0;
+}
 ```
 
 Result
 ```
+p[0]= &nums[0]
+p[1]= &nums[1]
+p[2]= &nums[2]
+p[3]= &nums[3]
+p[4]= &nums[4]
 
+*p[0]= 11
+*p[1]= 22
+*p[2]= 33
+*p[3]= 44
+*p[4]= 55
 ```
 
-## 
+## Pointer to Pointer (Multiple Indirection)
 ```cpp
+#include <iostream>
+
+using namespace std;
+
+void showExample10(){
+    int factor;
+    int *p;
+    int **pp;
+    
+    factor = 100;
+    
+    p = &factor;
+    pp = &p;
+    
+    cout << "Value of factor :" << factor << endl;
+    cout << "Value available at *p :" << *p << endl;
+    cout << "Value available at **pp :" << **pp << endl <<endl;
+    
+    factor = 200;
+    cout << "factor = " << factor << endl;
+    cout << "Value available at *p :" << *p << endl;
+    cout << "Value available at **pp :" << **pp << endl<<endl;
+    
+    *p = 300;
+    cout << "*p = " << *p << endl;
+    cout << "Value of factor :" << factor << endl;
+    cout << "Value available at **pp :" << **pp << endl<<endl;
+    
+    **pp = 44;
+    cout << "**pp  = " << **pp << endl;
+    cout << "Value of factor :" << factor << endl;
+    cout << "Value available at *p :" << *p << endl;
+}
 ```
 
 Result
 ```
+Value of factor :100
+Value available at *p :100
+Value available at **pp :100
 
+factor = 200
+Value available at *p :200
+Value available at **pp :200
+
+*p = 300
+Value of factor :300
+Value available at **pp :300
+
+**pp  = 44
+Value of factor :44
+Value available at *p :44
 ```
 
 
