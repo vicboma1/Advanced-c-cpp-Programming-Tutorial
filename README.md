@@ -1,10 +1,10 @@
 # Advanced C/C++ Programming Tutorial
 
 ##Indexes
-
+ 
 ###Basics 
 * [Hello World](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#hello-world)
-* [Contanst/Literals](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#contanst/literals)
+* [Contanst/Literals](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#contanstliterals)
 * [Conditionals](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#conditionals)
 * [Loops](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#loops)
 * [Switch](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#switch)
@@ -14,7 +14,7 @@
 * [Arrays](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#arrays)
 * [Pointer vs Arrays](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#pointer-vs-arrays)
 * [Array of Pointers](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#array-of-pointers)
-* [Pointer to Pointer (Multiple Indirection)](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#pointer-to-pointer-(multiple-indirection))
+* [Pointer to Pointer (Multiple Indirection)](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#pointer-to-pointer-multiple-indirection)
 
 # Basics
 
