@@ -18,6 +18,7 @@
 * [References vs Points](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#references-vs-points)
 * [References](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#references)
 * [Returning values by reference](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#returning-values-by-reference)
+* [Date and Time Structs](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#date-and-time-structs)
 
 # Basics
 
@@ -1030,14 +1031,57 @@ arrayInt[3] = 3
 arrayInt[4] = 4
 arrayInt[5] = 5
 ```
-##
+
+## Date and Time Structs
 ```cpp
+#include <iostream>
+#include <ctime>
+
+using namespace std;
+
+/** 
+  ctime
+ 
+struct tm {
+ int tm_sec;  int tm_mday;  int tm_wday;
+ int tm_min;  int tm_mon;   int tm_yday;
+ int tm_hour; int tm_year;  int tm_isdst;
+ };  
+ */
+
+void showExample14(){
+    time_t clock = time(0);
+    char* _date = ctime(&clock);
+    tm* clockLocal = localtime(&clock);
+    
+    cout << _date << endl;
+    
+    cout << "Year: "<< 1900 + clockLocal->tm_year << endl;
+    cout << "Month: "<< 1 + clockLocal->tm_mon<< endl;
+    cout << "Day: "<<  clockLocal->tm_mday << endl;
+    cout << "Time: "<< 1 + clockLocal->tm_hour << ":";
+    cout << 1 + clockLocal->tm_min << ":";
+    cout << 1 + clockLocal->tm_sec << endl;
+    
+}
+
+int main(int argc, const char * argv[]) {
+    showExample14();
+    return 0;
+}
+
 ```
 
 Result
 ```
+Sun Nov 22 20:12:53 2015
 
+Year: 2015
+Month: 11
+Day: 22
+Time: 21:13:54
 ```
+
 ##
 ```cpp
 ```
