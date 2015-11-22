@@ -1,4 +1,4 @@
-# Advanced C/C++ Programming Tutorial with Xcode
+# Advanced C/C++ Programming Tutorial with Xcode (WIP)
 
 ##Indexes
 
@@ -15,8 +15,8 @@
 * [Pointer vs Arrays](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#pointer-vs-arrays)
 * [Array of Pointers](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#array-of-pointers)
 * [Pointer to Pointer (Multiple Indirection)](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#pointer-to-pointer-multiple-indirection)
+* [References vs Points](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#references-vs-points)
 * [References](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#references)
-
 
 # Basics
 
@@ -830,32 +830,125 @@ Value of factor :44
 Value available at *p :44
 ```
 
+## References vs Points
+```
+Las referencias son frecuentemente confundidas con los punteros.
+ Hay tres diferencias:
+    1: Las referencias nunca pueden ser NULL.
+    2: Una referencias inicializada en un objeto no puede ser referenciada a otro objeto.
+    3: Una referencia debe de ser inicializada cuando se crea el objeto.
+```
 
-##
+## References
 ```cpp
+#include <iostream>
+#include <sstream>
+
+using namespace std;
+
+void variablesAndReferences(){
+
+    int fooInt;
+    double fooDouble;
+    
+    int &fooRefInt = fooInt;
+    double &fooRefDouble = fooDouble;
+    
+    fooInt = 100;
+    fooDouble = 777.7;
+    
+    cout << "Value fooInt : " << fooInt << endl;
+    cout << "Value fooRefInt : " << fooRefInt  << endl;
+   
+    cout << "fooDouble : " << fooDouble << endl;
+    cout << "fooRefDouble : " << fooRefDouble  << endl;
+}
+
+void showExample11(){
+    variablesAndReferences();
+}
+
+int main(int argc, const char * argv[]) {
+    showExample11();
+    return 0;
+}
 ```
 
 Result
 ```
-
+Value fooInt : 100
+Value fooRefInt : 100
+fooDouble : 777.7
+fooRefDouble : 777.7
 ```
 
 ##
 ```cpp
+#include <iostream>
+#include <sstream>
+
+using namespace std;
+
+void swap(string& str1, string& str2);
+void swap(int& x, int& y);
+
+void exampleString(){
+    string hello = "World !!!!";
+    string world = "Hello";
+    
+    cout << hello <<" "<< world <<endl;
+    
+    swap(hello, world);
+    
+    cout << hello <<" "<< world <<endl;
+}
+
+void exampleInt(){
+    int x = 100;
+    int y = 200;
+    
+    cout << "Value x: "<< x <<" Value y: "<< y <<endl;
+    
+    swap(x, y);
+    
+    cout << "Value x: "<< x <<" Value y: "<< y <<endl;
+}
+
+void showExample12(){
+    exampleString();
+    exampleInt();
+}
+
+void swap(string& str1, string& str2){
+    string tmp;
+    tmp = str1;
+    str1 = str2;
+    str2 = tmp;
+    
+    return ;
+}
+
+void swap(int& str1, int& str2){
+    int tmp;
+    tmp = str1;
+    str1 = str2;
+    str2 = tmp;
+    
+    return ;
+}
+
+int main(int argc, const char * argv[]) {
+    showExample12();
+    return 0;
+}
 ```
 
 Result
 ```
-
-```
-
-##
-```cpp
-```
-
-Result
-```
-
+World !!!! Hello
+Hello World !!!!
+Value x: 100 Value y: 200
+Value x: 200 Value y: 100
 ```
 
 ##
