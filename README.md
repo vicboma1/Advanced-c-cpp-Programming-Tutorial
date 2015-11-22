@@ -19,7 +19,8 @@
 * [References](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#references)
 * [Returning values by reference](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#returning-values-by-reference)
 * [Date and Time Structs](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#date-and-time-structs)
-
+* [File Input/Output](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#file-inputoutput)
+* 
 # Basics
 
 ## Hello World
@@ -1082,7 +1083,7 @@ Day: 22
 Time: 21:13:54
 ```
 
-##
+## File Input/Output
 ```cpp
 ```
 
@@ -1099,3 +1100,6 @@ Result
 
 ```
 
+# Referencias : 
+* Basics File I/O, http://compsci.hunter.cuny.edu/~sweiss/resources/fileIO.pdf
+* 
