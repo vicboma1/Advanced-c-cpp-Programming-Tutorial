@@ -15,6 +15,8 @@
 * [Pointer vs Arrays](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#pointer-vs-arrays)
 * [Array of Pointers](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#array-of-pointers)
 * [Pointer to Pointer (Multiple Indirection)](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#pointer-to-pointer-multiple-indirection)
+* [References](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#references)
+
 
 # Basics
 
@@ -837,3 +839,55 @@ Result
 ```
 
 ```
+
+##
+```cpp
+```
+
+Result
+```
+
+```
+
+##
+```cpp
+```
+
+Result
+```
+
+```
+
+##
+```cpp
+```
+
+Result
+```
+
+```
+##
+```cpp
+```
+
+Result
+```
+
+```
+##
+```cpp
+```
+
+Result
+```
+
+```
+##
+```cpp
+```
+
+Result
+```
+
+```
+
