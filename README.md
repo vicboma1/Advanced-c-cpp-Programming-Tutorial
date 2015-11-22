@@ -21,6 +21,12 @@
 * [Date and Time Structs](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#date-and-time-structs)
 * [File Input/Output](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#file-inputoutput)
 * 
+
+### Advanced
+* [Binary File](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#binary-file)
+
+
+
 # Basics
 
 ## Hello World
@@ -1085,10 +1091,65 @@ Time: 21:13:54
 
 ## File Input/Output
 ```cpp
+#include <iostream>
+#include <sstream>
+#include <fstream>
+
+using namespace std;
+
+
+void readFile(){
+    string line;
+    ifstream file_r("File.txt");
+    bool isOpen = file_r.is_open();
+    if (!isOpen)
+    {
+        cout << "Error file : Unable to open";
+        return ;
+    }
+    
+    while (getline (file_r,line) )
+    {
+        cout << line << '\n';
+    }
+    file_r.close();
+}
+
+void writeFile(){
+    ofstream file_w("File.txt", ios::app);
+    bool isOpen = file_w.is_open();
+    if (!isOpen)
+    {
+        cout << "Error file : Unable to open";
+        return ;
+    }
+
+    file_w << "\n\n";
+    file_w << "Victor Bolinches Marin";
+    file_w.close();
+}
+
+void showExample15(){
+    readFile();
+    writeFile();
+    readFile();
+}
+
+int main(int argc, const char * argv[]) {
+    showExample15();
+    return 0;
+}
+
 ```
 
 Result
 ```
+"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit ...
+
+"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit ...
+
+
+Victor Bolinches Marin
 
 ```
 ##
@@ -1099,6 +1160,57 @@ Result
 ```
 
 ```
+
+#Advanced
+
+## Binary File
+```cpp
+#include <iostream>
+#include <sstream>
+#include <fstream>
+
+using namespace std;
+
+void showExample000(){
+    streampos size;
+    char* memblock;
+    
+    ifstream file("File.bin", ios::in | ios::binary | ios::ate);
+    if (!file.is_open()){
+        cout << "Unable to open file";
+        return ;
+    }
+    
+    size = file.tellg();
+    memblock = new char [size];
+    file.seekg (0, ios::beg);
+    file.read (memblock, size);
+    file.close();
+    
+    cout << "the entire file content is in memory";
+    cout << memblock <<endl;
+    cout << "delete[] memblock;" << endl << endl;
+    delete[] memblock;
+}
+
+int main(int argc, const char * argv[]) {
+    showExample000();
+    return 0;
+}
+```
+
+Result
+```
+"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit ...
+
+"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit ...
+
+
+Victor Bolinches Marin
+delete[] memblock;
+
+```
+
 
 # Referencias : 
 * Basics File I/O, http://compsci.hunter.cuny.edu/~sweiss/resources/fileIO.pdf
