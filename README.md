@@ -17,6 +17,7 @@
 * [Pointer to Pointer (Multiple Indirection)](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#pointer-to-pointer-multiple-indirection)
 * [References vs Points](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#references-vs-points)
 * [References](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#references)
+* [Returning values by reference](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#returning-values-by-reference)
 
 # Basics
 
@@ -882,7 +883,7 @@ fooDouble : 777.7
 fooRefDouble : 777.7
 ```
 
-##
+## Parameter by References
 ```cpp
 #include <iostream>
 #include <sstream>
@@ -914,9 +915,24 @@ void exampleInt(){
     cout << "Value x: "<< x <<" Value y: "<< y <<endl;
 }
 
+void exampleIntPointer(){
+    int _x = 300;
+    int _y = 400;
+    int* x = &_x;
+    int* y = &_y;
+    
+    cout << "Value x: "<< *x <<" Value y: "<< *y <<endl;
+    
+    swap(*x, *y);
+    
+    cout << "Value x: "<< *x <<" Value y: "<< *y <<endl;
+}
+
+
 void showExample12(){
     exampleString();
     exampleInt();
+    exampleIntPointer();
 }
 
 void swap(string& str1, string& str2){
@@ -941,6 +957,7 @@ int main(int argc, const char * argv[]) {
     showExample12();
     return 0;
 }
+
 ```
 
 Result
@@ -949,15 +966,69 @@ World !!!! Hello
 Hello World !!!!
 Value x: 100 Value y: 200
 Value x: 200 Value y: 100
+Value *x: 300 Value *y: 400
+Value *x: 400 Value *y: 300
 ```
 
-##
+## Returning values by reference
 ```cpp
+#include <iostream>
+using namespace std;
+
+int& set(int obj [], int i )
+{
+    return obj[i];
+}
+
+void showExample13(){
+    
+    int arrayInt [] = {0,1,2,3,4,5};
+    
+    int size = 6;
+    for (int i = 0; i< size; i++) {
+        cout << "arrayInt[" << i << "] = ";
+        cout << arrayInt[i] << endl;
+    }
+    
+    cout <<""<< endl;
+    cout <<"set(arrayInt,0) = 999;"<< endl;
+    cout <<"set(arrayInt,1) = 444;"<< endl;
+    cout <<""<< endl;
+    
+    set(arrayInt,0) = 999;
+    set(arrayInt,1) = 444;
+    
+    for (int i = 0; i< size; i++) {
+        cout << "arrayInt[" << i << "] = ";
+        cout << arrayInt[i] << endl;
+    }
+    
+}
+
+int main(int argc, const char * argv[]) {
+    showExample13();
+    return 0;
+}
 ```
 
 Result
 ```
+arrayInt[0] = 0
+arrayInt[1] = 1
+arrayInt[2] = 2
+arrayInt[3] = 3
+arrayInt[4] = 4
+arrayInt[5] = 5
 
+set(arrayInt,0) = 999;
+set(arrayInt,1) = 444;
+
+arrayInt[0] = 999
+arrayInt[1] = 444
+arrayInt[2] = 2
+arrayInt[3] = 3
+arrayInt[4] = 4
+arrayInt[5] = 5
 ```
 ##
 ```cpp
