@@ -1,0 +1,914 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		64BCD2461C0292C30087623E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64BCD2421C0292C20087623E /* 01 - Conditionals.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64BCD2381C0292C20087623E;
+			remoteInfo = "01 - Conditionals";
+		};
+		64BCD25F1C0292E70087623E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64BCD25B1C0292E60087623E /* 02 - Loops.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64BCD2511C0292E60087623E;
+			remoteInfo = "02 - Loops";
+		};
+		64BCD2781C0292F50087623E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64BCD2741C0292F40087623E /* 03 - Switch.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64BCD26A1C0292F40087623E;
+			remoteInfo = "03 - Switch";
+		};
+		64BCD2911C0293060087623E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64BCD28D1C0293060087623E /* 04 - Pointers.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64BCD2831C0293060087623E;
+			remoteInfo = "04 - Pointers";
+		};
+		64BCD2AA1C02931A0087623E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64BCD2A61C0293190087623E /* 05 - Structures.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64BCD29C1C0293190087623E;
+			remoteInfo = "05 - Structures";
+		};
+		64BCD2C31C02932F0087623E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64BCD2BF1C02932E0087623E /* 06 - Arrays.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64BCD2B51C02932E0087623E;
+			remoteInfo = "06 - Arrays";
+		};
+		64BCD2DC1C02934C0087623E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64BCD2D81C02934B0087623E /* 07 - Storages.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64BCD2CE1C02934B0087623E;
+			remoteInfo = "07 - Storages";
+		};
+		64BCD2F51C02935F0087623E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64BCD2F11C02935E0087623E /* 08 - PointersVsArrays.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64BCD2E71C02935E0087623E;
+			remoteInfo = "08 - PointersVsArrays";
+		};
+		64BCD30E1C02936F0087623E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64BCD30A1C02936E0087623E /* 09 - ArrayOfPointers.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64BCD3001C02936E0087623E;
+			remoteInfo = "09 - ArrayOfPointers";
+		};
+		64BCD3271C0293800087623E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64BCD3231C02937F0087623E /* 10 - Pointer to Pointer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64BCD3191C02937F0087623E;
+			remoteInfo = "10 - Pointer to Pointer";
+		};
+		64BCD3401C02938E0087623E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64BCD33C1C02938D0087623E /* 11 - References.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64BCD3321C02938D0087623E;
+			remoteInfo = "11 - References";
+		};
+		64BCD3591C0293A20087623E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64BCD3551C0293A20087623E /* 12 - Parameter by reference.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64BCD34B1C0293A20087623E;
+			remoteInfo = "12 - Parameter by reference";
+		};
+		64BCD3721C0293C00087623E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64BCD36E1C0293C00087623E /* 13 - returningValuesOfReference.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64BCD3641C0293C00087623E;
+			remoteInfo = "13 - returningValuesOfReference";
+		};
+		64BCD38B1C0293D40087623E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64BCD3871C0293D30087623E /* 14 - Date and Time structs.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64BCD37D1C0293D30087623E;
+			remoteInfo = "14 - Date and Time structs";
+		};
+		64BCD3A41C0293EB0087623E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64BCD3A01C0293EA0087623E /* 15 - FileIO.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64BCD3961C0293EA0087623E;
+			remoteInfo = "15 - FileIO";
+		};
+		64BCD3BD1C0294020087623E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64BCD3B91C0294010087623E /* 16 - Typecasting.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64BCD3AF1C0294010087623E;
+			remoteInfo = "16 - Typecasting";
+		};
+		64BCD3EF1C0294770087623E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64BCD3EB1C0294760087623E /* 17 - Data Structs.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64BCD3E11C0294760087623E;
+			remoteInfo = "17 - Data Structs";
+		};
+		64BCD4081C0294A60087623E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64BCD4041C0294A50087623E /* 18 - Data Struct Pointer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64BCD3FA1C0294A50087623E;
+			remoteInfo = "18 - Data Struct Pointer";
+		};
+		64BCD4341C02965A0087623E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64BCD4301C0296590087623E /* 00 - Intro.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64BCD21F1C0292A20087623E;
+			remoteInfo = "00 - Intro";
+		};
+		64BCD4611C03CB850087623E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64BCD45D1C03CB840087623E /* 001 - Classes.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64BCD4531C03CB840087623E;
+			remoteInfo = "001 - Classes";
+		};
+		64BCD48F1C03CC910087623E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64BCD48B1C03CC900087623E /* 002 - Interface.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64BCD4811C03CC900087623E;
+			remoteInfo = "002 - Interface";
+		};
+		64BCD4A81C03D2300087623E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64BCD4A41C03D22F0087623E /* 003 - Abstract classes.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64BCD49A1C03D22F0087623E;
+			remoteInfo = "003 - Abstract classes";
+		};
+		64BCD4C11C03D8AC0087623E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64BCD4BD1C03D8AB0087623E /* 004 - Dynamic Memory.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64BCD4B31C03D8AB0087623E;
+			remoteInfo = "004 - Dynamic Memory";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		64BCD1D41C02900D0087623E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		64BCD1D61C02900D0087623E /* tutorial */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = tutorial; sourceTree = BUILT_PRODUCTS_DIR; };
+		64BCD2421C0292C20087623E /* 01 - Conditionals.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "01 - Conditionals.xcodeproj"; path = "01 - Conditionals/01 - Conditionals.xcodeproj"; sourceTree = "<group>"; };
+		64BCD25B1C0292E60087623E /* 02 - Loops.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "02 - Loops.xcodeproj"; path = "02 - Loops/02 - Loops.xcodeproj"; sourceTree = "<group>"; };
+		64BCD2741C0292F40087623E /* 03 - Switch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "03 - Switch.xcodeproj"; path = "03 - Switch/03 - Switch.xcodeproj"; sourceTree = "<group>"; };
+		64BCD28D1C0293060087623E /* 04 - Pointers.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "04 - Pointers.xcodeproj"; path = "04 - Pointers/04 - Pointers.xcodeproj"; sourceTree = "<group>"; };
+		64BCD2A61C0293190087623E /* 05 - Structures.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "05 - Structures.xcodeproj"; path = "05 - Structures/05 - Structures.xcodeproj"; sourceTree = "<group>"; };
+		64BCD2BF1C02932E0087623E /* 06 - Arrays.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "06 - Arrays.xcodeproj"; path = "06 - Arrays/06 - Arrays.xcodeproj"; sourceTree = "<group>"; };
+		64BCD2D81C02934B0087623E /* 07 - Storages.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "07 - Storages.xcodeproj"; path = "07 - Storages/07 - Storages.xcodeproj"; sourceTree = "<group>"; };
+		64BCD2F11C02935E0087623E /* 08 - PointersVsArrays.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "08 - PointersVsArrays.xcodeproj"; path = "08 - PointersVsArrays/08 - PointersVsArrays.xcodeproj"; sourceTree = "<group>"; };
+		64BCD30A1C02936E0087623E /* 09 - ArrayOfPointers.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "09 - ArrayOfPointers.xcodeproj"; path = "09 - ArrayOfPointers/09 - ArrayOfPointers.xcodeproj"; sourceTree = "<group>"; };
+		64BCD3231C02937F0087623E /* 10 - Pointer to Pointer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "10 - Pointer to Pointer.xcodeproj"; path = "10 - Pointer to Pointer/10 - Pointer to Pointer.xcodeproj"; sourceTree = "<group>"; };
+		64BCD33C1C02938D0087623E /* 11 - References.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "11 - References.xcodeproj"; path = "11 - References/11 - References.xcodeproj"; sourceTree = "<group>"; };
+		64BCD3551C0293A20087623E /* 12 - Parameter by reference.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "12 - Parameter by reference.xcodeproj"; path = "12 - Parameter by reference/12 - Parameter by reference.xcodeproj"; sourceTree = "<group>"; };
+		64BCD36E1C0293C00087623E /* 13 - returningValuesOfReference.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "13 - returningValuesOfReference.xcodeproj"; path = "13 - returningValuesOfReference/13 - returningValuesOfReference.xcodeproj"; sourceTree = "<group>"; };
+		64BCD3871C0293D30087623E /* 14 - Date and Time structs.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "14 - Date and Time structs.xcodeproj"; path = "14 - Date and Time structs/14 - Date and Time structs.xcodeproj"; sourceTree = "<group>"; };
+		64BCD3A01C0293EA0087623E /* 15 - FileIO.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "15 - FileIO.xcodeproj"; path = "15 - FileIO/15 - FileIO.xcodeproj"; sourceTree = "<group>"; };
+		64BCD3B91C0294010087623E /* 16 - Typecasting.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "16 - Typecasting.xcodeproj"; path = "16 - Typecasting/16 - Typecasting.xcodeproj"; sourceTree = "<group>"; };
+		64BCD3EB1C0294760087623E /* 17 - Data Structs.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "17 - Data Structs.xcodeproj"; path = "17 - Data Structs/17 - Data Structs.xcodeproj"; sourceTree = "<group>"; };
+		64BCD4041C0294A50087623E /* 18 - Data Struct Pointer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "18 - Data Struct Pointer.xcodeproj"; path = "18 - Data Struct Pointer/18 - Data Struct Pointer.xcodeproj"; sourceTree = "<group>"; };
+		64BCD4301C0296590087623E /* 00 - Intro.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "00 - Intro.xcodeproj"; path = "00 - Intro/00 - Intro.xcodeproj"; sourceTree = "<group>"; };
+		64BCD45D1C03CB840087623E /* 001 - Classes.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "001 - Classes.xcodeproj"; path = "000 - intermediated/001 - Classes/001 - Classes.xcodeproj"; sourceTree = "<group>"; };
+		64BCD48B1C03CC900087623E /* 002 - Interface.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "002 - Interface.xcodeproj"; path = "000 - intermediated/002 - Interface/002 - Interface.xcodeproj"; sourceTree = "<group>"; };
+		64BCD4A41C03D22F0087623E /* 003 - Abstract classes.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "003 - Abstract classes.xcodeproj"; path = "000 - intermediated/003 - Abstract classes/003 - Abstract classes.xcodeproj"; sourceTree = "<group>"; };
+		64BCD4BD1C03D8AB0087623E /* 004 - Dynamic Memory.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "004 - Dynamic Memory.xcodeproj"; path = "000 - intermediated/004 - Dynamic Memory/004 - Dynamic Memory.xcodeproj"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		64BCD1D31C02900D0087623E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		64BCD1CD1C02900D0087623E = {
+			isa = PBXGroup;
+			children = (
+				64BCD1D81C02900D0087623E /* tutorial */,
+				64BCD1D71C02900D0087623E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		64BCD1D71C02900D0087623E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64BCD1D61C02900D0087623E /* tutorial */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64BCD1D81C02900D0087623E /* tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				64BCD1FB1C0291800087623E /* 01 - basics */,
+				64BCD4361C03CA4E0087623E /* 02 - intermediate */,
+				64BCD1FA1C0291710087623E /* 03 - advanced */,
+			);
+			path = tutorial;
+			sourceTree = "<group>";
+		};
+		64BCD1FA1C0291710087623E /* 03 - advanced */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "03 - advanced";
+			sourceTree = "<group>";
+		};
+		64BCD1FB1C0291800087623E /* 01 - basics */ = {
+			isa = PBXGroup;
+			children = (
+				64BCD4041C0294A50087623E /* 18 - Data Struct Pointer.xcodeproj */,
+				64BCD3EB1C0294760087623E /* 17 - Data Structs.xcodeproj */,
+				64BCD3B91C0294010087623E /* 16 - Typecasting.xcodeproj */,
+				64BCD3A01C0293EA0087623E /* 15 - FileIO.xcodeproj */,
+				64BCD3871C0293D30087623E /* 14 - Date and Time structs.xcodeproj */,
+				64BCD36E1C0293C00087623E /* 13 - returningValuesOfReference.xcodeproj */,
+				64BCD3551C0293A20087623E /* 12 - Parameter by reference.xcodeproj */,
+				64BCD33C1C02938D0087623E /* 11 - References.xcodeproj */,
+				64BCD3231C02937F0087623E /* 10 - Pointer to Pointer.xcodeproj */,
+				64BCD30A1C02936E0087623E /* 09 - ArrayOfPointers.xcodeproj */,
+				64BCD2F11C02935E0087623E /* 08 - PointersVsArrays.xcodeproj */,
+				64BCD2D81C02934B0087623E /* 07 - Storages.xcodeproj */,
+				64BCD2BF1C02932E0087623E /* 06 - Arrays.xcodeproj */,
+				64BCD2A61C0293190087623E /* 05 - Structures.xcodeproj */,
+				64BCD28D1C0293060087623E /* 04 - Pointers.xcodeproj */,
+				64BCD2741C0292F40087623E /* 03 - Switch.xcodeproj */,
+				64BCD25B1C0292E60087623E /* 02 - Loops.xcodeproj */,
+				64BCD2421C0292C20087623E /* 01 - Conditionals.xcodeproj */,
+				64BCD4301C0296590087623E /* 00 - Intro.xcodeproj */,
+			);
+			name = "01 - basics";
+			sourceTree = "<group>";
+		};
+		64BCD2431C0292C20087623E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64BCD2471C0292C30087623E /* 01 - Conditionals */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64BCD25C1C0292E60087623E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64BCD2601C0292E70087623E /* 02 - Loops */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64BCD2751C0292F40087623E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64BCD2791C0292F50087623E /* 03 - Switch */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64BCD28E1C0293060087623E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64BCD2921C0293060087623E /* 04 - Pointers */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64BCD2A71C0293190087623E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64BCD2AB1C02931A0087623E /* 05 - Structures */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64BCD2C01C02932E0087623E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64BCD2C41C02932F0087623E /* 06 - Arrays */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64BCD2D91C02934B0087623E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64BCD2DD1C02934C0087623E /* 07 - Storages */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64BCD2F21C02935E0087623E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64BCD2F61C02935F0087623E /* 08 - PointersVsArrays */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64BCD30B1C02936E0087623E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64BCD30F1C02936F0087623E /* 09 - ArrayOfPointers */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64BCD3241C02937F0087623E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64BCD3281C0293800087623E /* 10 - Pointer to Pointer */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64BCD33D1C02938D0087623E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64BCD3411C02938E0087623E /* 11 - References */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64BCD3561C0293A20087623E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64BCD35A1C0293A20087623E /* 12 - Parameter by reference */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64BCD36F1C0293C00087623E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64BCD3731C0293C00087623E /* 13 - returningValuesOfReference */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64BCD3881C0293D30087623E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64BCD38C1C0293D40087623E /* 14 - Date and Time structs */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64BCD3A11C0293EA0087623E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64BCD3A51C0293EB0087623E /* 15 - FileIO */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64BCD3BA1C0294010087623E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64BCD3BE1C0294020087623E /* 16 - Typecasting */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64BCD3EC1C0294760087623E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64BCD3F01C0294770087623E /* 17 - Data Structs */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64BCD4051C0294A50087623E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64BCD4091C0294A60087623E /* 18 - Data Struct Pointer */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64BCD4311C0296590087623E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64BCD4351C02965A0087623E /* 00 - Intro */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64BCD4361C03CA4E0087623E /* 02 - intermediate */ = {
+			isa = PBXGroup;
+			children = (
+				64BCD4BD1C03D8AB0087623E /* 004 - Dynamic Memory.xcodeproj */,
+				64BCD4A41C03D22F0087623E /* 003 - Abstract classes.xcodeproj */,
+				64BCD48B1C03CC900087623E /* 002 - Interface.xcodeproj */,
+				64BCD45D1C03CB840087623E /* 001 - Classes.xcodeproj */,
+			);
+			name = "02 - intermediate";
+			sourceTree = "<group>";
+		};
+		64BCD45E1C03CB840087623E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64BCD4621C03CB850087623E /* 001 - Classes */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64BCD48C1C03CC900087623E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64BCD4901C03CC910087623E /* 002 - Interface */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64BCD4A51C03D22F0087623E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64BCD4A91C03D2300087623E /* 003 - Abstract classes */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64BCD4BE1C03D8AB0087623E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64BCD4C21C03D8AC0087623E /* 004 - Dynamic Memory */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		64BCD1D51C02900D0087623E /* tutorial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64BCD1DD1C02900D0087623E /* Build configuration list for PBXNativeTarget "tutorial" */;
+			buildPhases = (
+				64BCD1D21C02900D0087623E /* Sources */,
+				64BCD1D31C02900D0087623E /* Frameworks */,
+				64BCD1D41C02900D0087623E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tutorial;
+			productName = tutorial;
+			productReference = 64BCD1D61C02900D0087623E /* tutorial */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		64BCD1CE1C02900D0087623E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Victor Bolinches Marin";
+				TargetAttributes = {
+					64BCD1D51C02900D0087623E = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 64BCD1D11C02900D0087623E /* Build configuration list for PBXProject "tutorial" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 64BCD1CD1C02900D0087623E;
+			productRefGroup = 64BCD1D71C02900D0087623E /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 64BCD4311C0296590087623E /* Products */;
+					ProjectRef = 64BCD4301C0296590087623E /* 00 - Intro.xcodeproj */;
+				},
+				{
+					ProductGroup = 64BCD45E1C03CB840087623E /* Products */;
+					ProjectRef = 64BCD45D1C03CB840087623E /* 001 - Classes.xcodeproj */;
+				},
+				{
+					ProductGroup = 64BCD48C1C03CC900087623E /* Products */;
+					ProjectRef = 64BCD48B1C03CC900087623E /* 002 - Interface.xcodeproj */;
+				},
+				{
+					ProductGroup = 64BCD4A51C03D22F0087623E /* Products */;
+					ProjectRef = 64BCD4A41C03D22F0087623E /* 003 - Abstract classes.xcodeproj */;
+				},
+				{
+					ProductGroup = 64BCD4BE1C03D8AB0087623E /* Products */;
+					ProjectRef = 64BCD4BD1C03D8AB0087623E /* 004 - Dynamic Memory.xcodeproj */;
+				},
+				{
+					ProductGroup = 64BCD2431C0292C20087623E /* Products */;
+					ProjectRef = 64BCD2421C0292C20087623E /* 01 - Conditionals.xcodeproj */;
+				},
+				{
+					ProductGroup = 64BCD25C1C0292E60087623E /* Products */;
+					ProjectRef = 64BCD25B1C0292E60087623E /* 02 - Loops.xcodeproj */;
+				},
+				{
+					ProductGroup = 64BCD2751C0292F40087623E /* Products */;
+					ProjectRef = 64BCD2741C0292F40087623E /* 03 - Switch.xcodeproj */;
+				},
+				{
+					ProductGroup = 64BCD28E1C0293060087623E /* Products */;
+					ProjectRef = 64BCD28D1C0293060087623E /* 04 - Pointers.xcodeproj */;
+				},
+				{
+					ProductGroup = 64BCD2A71C0293190087623E /* Products */;
+					ProjectRef = 64BCD2A61C0293190087623E /* 05 - Structures.xcodeproj */;
+				},
+				{
+					ProductGroup = 64BCD2C01C02932E0087623E /* Products */;
+					ProjectRef = 64BCD2BF1C02932E0087623E /* 06 - Arrays.xcodeproj */;
+				},
+				{
+					ProductGroup = 64BCD2D91C02934B0087623E /* Products */;
+					ProjectRef = 64BCD2D81C02934B0087623E /* 07 - Storages.xcodeproj */;
+				},
+				{
+					ProductGroup = 64BCD2F21C02935E0087623E /* Products */;
+					ProjectRef = 64BCD2F11C02935E0087623E /* 08 - PointersVsArrays.xcodeproj */;
+				},
+				{
+					ProductGroup = 64BCD30B1C02936E0087623E /* Products */;
+					ProjectRef = 64BCD30A1C02936E0087623E /* 09 - ArrayOfPointers.xcodeproj */;
+				},
+				{
+					ProductGroup = 64BCD3241C02937F0087623E /* Products */;
+					ProjectRef = 64BCD3231C02937F0087623E /* 10 - Pointer to Pointer.xcodeproj */;
+				},
+				{
+					ProductGroup = 64BCD33D1C02938D0087623E /* Products */;
+					ProjectRef = 64BCD33C1C02938D0087623E /* 11 - References.xcodeproj */;
+				},
+				{
+					ProductGroup = 64BCD3561C0293A20087623E /* Products */;
+					ProjectRef = 64BCD3551C0293A20087623E /* 12 - Parameter by reference.xcodeproj */;
+				},
+				{
+					ProductGroup = 64BCD36F1C0293C00087623E /* Products */;
+					ProjectRef = 64BCD36E1C0293C00087623E /* 13 - returningValuesOfReference.xcodeproj */;
+				},
+				{
+					ProductGroup = 64BCD3881C0293D30087623E /* Products */;
+					ProjectRef = 64BCD3871C0293D30087623E /* 14 - Date and Time structs.xcodeproj */;
+				},
+				{
+					ProductGroup = 64BCD3A11C0293EA0087623E /* Products */;
+					ProjectRef = 64BCD3A01C0293EA0087623E /* 15 - FileIO.xcodeproj */;
+				},
+				{
+					ProductGroup = 64BCD3BA1C0294010087623E /* Products */;
+					ProjectRef = 64BCD3B91C0294010087623E /* 16 - Typecasting.xcodeproj */;
+				},
+				{
+					ProductGroup = 64BCD3EC1C0294760087623E /* Products */;
+					ProjectRef = 64BCD3EB1C0294760087623E /* 17 - Data Structs.xcodeproj */;
+				},
+				{
+					ProductGroup = 64BCD4051C0294A50087623E /* Products */;
+					ProjectRef = 64BCD4041C0294A50087623E /* 18 - Data Struct Pointer.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				64BCD1D51C02900D0087623E /* tutorial */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		64BCD2471C0292C30087623E /* 01 - Conditionals */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "01 - Conditionals";
+			remoteRef = 64BCD2461C0292C30087623E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		64BCD2601C0292E70087623E /* 02 - Loops */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "02 - Loops";
+			remoteRef = 64BCD25F1C0292E70087623E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		64BCD2791C0292F50087623E /* 03 - Switch */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "03 - Switch";
+			remoteRef = 64BCD2781C0292F50087623E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		64BCD2921C0293060087623E /* 04 - Pointers */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "04 - Pointers";
+			remoteRef = 64BCD2911C0293060087623E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		64BCD2AB1C02931A0087623E /* 05 - Structures */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "05 - Structures";
+			remoteRef = 64BCD2AA1C02931A0087623E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		64BCD2C41C02932F0087623E /* 06 - Arrays */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "06 - Arrays";
+			remoteRef = 64BCD2C31C02932F0087623E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		64BCD2DD1C02934C0087623E /* 07 - Storages */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "07 - Storages";
+			remoteRef = 64BCD2DC1C02934C0087623E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		64BCD2F61C02935F0087623E /* 08 - PointersVsArrays */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "08 - PointersVsArrays";
+			remoteRef = 64BCD2F51C02935F0087623E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		64BCD30F1C02936F0087623E /* 09 - ArrayOfPointers */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "09 - ArrayOfPointers";
+			remoteRef = 64BCD30E1C02936F0087623E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		64BCD3281C0293800087623E /* 10 - Pointer to Pointer */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "10 - Pointer to Pointer";
+			remoteRef = 64BCD3271C0293800087623E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		64BCD3411C02938E0087623E /* 11 - References */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "11 - References";
+			remoteRef = 64BCD3401C02938E0087623E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		64BCD35A1C0293A20087623E /* 12 - Parameter by reference */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "12 - Parameter by reference";
+			remoteRef = 64BCD3591C0293A20087623E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		64BCD3731C0293C00087623E /* 13 - returningValuesOfReference */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "13 - returningValuesOfReference";
+			remoteRef = 64BCD3721C0293C00087623E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		64BCD38C1C0293D40087623E /* 14 - Date and Time structs */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "14 - Date and Time structs";
+			remoteRef = 64BCD38B1C0293D40087623E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		64BCD3A51C0293EB0087623E /* 15 - FileIO */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "15 - FileIO";
+			remoteRef = 64BCD3A41C0293EB0087623E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		64BCD3BE1C0294020087623E /* 16 - Typecasting */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "16 - Typecasting";
+			remoteRef = 64BCD3BD1C0294020087623E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		64BCD3F01C0294770087623E /* 17 - Data Structs */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "17 - Data Structs";
+			remoteRef = 64BCD3EF1C0294770087623E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		64BCD4091C0294A60087623E /* 18 - Data Struct Pointer */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "18 - Data Struct Pointer";
+			remoteRef = 64BCD4081C0294A60087623E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		64BCD4351C02965A0087623E /* 00 - Intro */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "00 - Intro";
+			remoteRef = 64BCD4341C02965A0087623E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		64BCD4621C03CB850087623E /* 001 - Classes */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "001 - Classes";
+			remoteRef = 64BCD4611C03CB850087623E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		64BCD4901C03CC910087623E /* 002 - Interface */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "002 - Interface";
+			remoteRef = 64BCD48F1C03CC910087623E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		64BCD4A91C03D2300087623E /* 003 - Abstract classes */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "003 - Abstract classes";
+			remoteRef = 64BCD4A81C03D2300087623E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		64BCD4C21C03D8AC0087623E /* 004 - Dynamic Memory */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "004 - Dynamic Memory";
+			remoteRef = 64BCD4C11C03D8AC0087623E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		64BCD1D21C02900D0087623E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		64BCD1DB1C02900D0087623E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		64BCD1DC1C02900D0087623E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		64BCD1DE1C02900D0087623E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		64BCD1DF1C02900D0087623E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		64BCD1D11C02900D0087623E /* Build configuration list for PBXProject "tutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64BCD1DB1C02900D0087623E /* Debug */,
+				64BCD1DC1C02900D0087623E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64BCD1DD1C02900D0087623E /* Build configuration list for PBXNativeTarget "tutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64BCD1DE1C02900D0087623E /* Debug */,
+				64BCD1DF1C02900D0087623E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 64BCD1CE1C02900D0087623E /* Project object */;
+}
