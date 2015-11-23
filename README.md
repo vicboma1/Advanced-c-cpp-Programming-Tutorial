@@ -29,7 +29,10 @@
 * [Interface](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#interface)
 * [Abstract Classes](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#abstract-classes)
 * [Dynamic Memory](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#dynamic-memory)
-
+* [Polymorphism - Pointers to base class](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#)
+* [Polymorphism - Virtual Members](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#polymorphism-virtual-members)
+* [Dynamic Allocation and Polymorphism](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#dynamic-allocation-and-polymorphism)
+* 
 ### Advanced
 * [Binary File](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#binary-file)
 
@@ -1538,7 +1541,205 @@ Result
 4: 
 ```
 
-## Interface
+## Polymorphism - Pointers to base class
+```cpp
+#include <iostream>
+using namespace std;
+
+class Polygon {
+    
+protected:
+    int width, height;
+
+public:
+    void set_values (int a, int b)
+        {
+            width = a;
+            height = b;
+        }
+};
+
+class Rectangle: public Polygon {
+    
+public:
+    int area()
+        {
+            return (width*height);
+        }
+};
+
+class Triangle: public Polygon {
+    
+public:
+    int area()
+        {
+            return (width*height)/2;
+        }
+};
+
+void showExample005(){
+    Rectangle rect;
+    Triangle trgl;
+    Polygon * ppoly1 = &rect;
+    Polygon * ppoly2 = &trgl;
+    ppoly1->set_values (4,5);
+    ppoly2->set_values (4,5);
+    cout << rect.area() << '\n';
+    cout << trgl.area() << '\n';
+}
+
+
+int main(int argc, const char * argv[]) {
+    showExample005();
+    return 0;
+}
+
+```
+
+Result
+```
+20
+10
+```
+
+## Polymorphism - Virtual members
+```cpp
+#include <iostream>
+using namespace std;
+
+class Polygon {
+    
+protected:
+    int width, height;
+public:
+    void set_values (int a, int b)
+    {
+        width = a;
+        height = b;
+    }
+    virtual int area ()
+    {
+        return 0;
+    }
+};
+
+class Rectangle: public Polygon {
+public:
+    int area ()
+    {
+        return width * height;
+    }
+};
+
+class Triangle: public Polygon {
+public:
+    int area ()
+    {
+        return (width * height / 2);
+    }
+};
+
+void showExample006(){
+    Rectangle rect;
+    Triangle trgl;
+    Polygon poly;
+    Polygon * ppoly1 = &rect;
+    Polygon * ppoly2 = &trgl;
+    Polygon * ppoly3 = &poly;
+    ppoly1->set_values (4,5);
+    ppoly2->set_values (4,5);
+    ppoly3->set_values (4,5);
+    cout << ppoly1->area() << '\n';
+    cout << ppoly2->area() << '\n';
+    cout << ppoly3->area() << '\n';
+    
+}
+
+int main(int argc, const char * argv[]) {
+    showExample006();
+    return 0;
+}
+```
+
+Result
+```
+20
+10
+0
+```
+
+## Dynamic Allocation and Polymorphism
+```cpp
+#include <iostream>
+using namespace std;
+
+class Polygon {
+protected:
+    int width, height;
+public:
+    Polygon (int a, int b) : width(a), height(b) {}
+    virtual ~ Polygon(){
+        cout <<"Destructor Polygon"<< this <<endl;
+    }
+    virtual int area (void) = 0;
+    void printarea()
+    {
+        cout << this->area() << '\n';
+    }
+};
+
+class Rectangle: public Polygon {
+public:
+    Rectangle(int a,int b) : Polygon(a,b) {}
+    virtual ~Rectangle(){
+        cout <<"Destructor Rectangle"<< this <<endl;
+    }
+    int area()
+    {
+        return width*height;
+    }
+};
+
+class Triangle: public Polygon {
+    public:
+    Triangle(int a,int b) : Polygon(a,b) {}
+    virtual ~Triangle(){
+        cout <<"Destructor Triangle "<< this <<endl;
+    }
+    int area()
+    {
+        return width*height/2;
+    }
+};
+
+
+void showExample006(){
+    Polygon * ppoly1 = new Rectangle (4,5);
+    Polygon * ppoly2 = new Triangle (4,5);
+    ppoly1->printarea();
+    ppoly2->printarea();
+    delete ppoly1;
+    delete ppoly2;
+}
+
+int main(int argc, const char * argv[]) {
+    showExample006();
+    return 0;
+}
+```
+
+Result
+```
+20
+10
+Destructor Rectangle0x1002000a0
+Destructor Polygon0x1002000a0
+
+Destructor Triangle 0x1002000b0
+Destructor Polygon0x1002000b0
+```
+
+## 
 ```cpp
 ```
 
@@ -1602,3 +1803,4 @@ delete[] memblock;
 * Andrei Alexandrescu, Addison-Wesley Professional; 1 edition (February 23, 2001), ISBN-10: 0201704315, Modern C++ Design: Generic Programming and Design Patterns Applied 1st Edition
 * Programming: Principles and Practice Using C++ (updated for C++11/C++14)
 * Addison-Wesley, 2 edition (May 25, 2014), ISBN-10: 0321992784, Programming: Principles and Practice Using C++ (2nd Edition) 
+* Polymorphism, http://www.cplusplus.com/forum/beginner/2530/
