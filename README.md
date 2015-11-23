@@ -1281,10 +1281,10 @@ typedef struct Client
 } Client;
 
 void toString(Client* cliente);
-Client& set(string name,string surname,string city, string phone, int _id);
+static Client& set(string name,string surname,string city, string phone, int _id);
 
 
-Client& set(string name,string surname,string city, string phone, int _id){
+static Client& set(string name,string surname,string city, string phone, int _id){
     static Client client;
     strcpy(client.name,name.c_str());
     strcpy(client.surname, surname.c_str());
