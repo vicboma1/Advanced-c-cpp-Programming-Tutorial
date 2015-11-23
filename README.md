@@ -1394,7 +1394,7 @@ delete[] memblock;
 
 
 # Referencias : 
-* C++ Template Metaprogramming: Concepts, Tools, and Techniques from Boost and Beyond s
-* Modern C++ Design: Generic Programming and Design Patterns Applied 1st Edition
-* Programming: Principles and Practice Using C++ (Bjarne Stroustrup) (updated for C++11/C++14)
-* Programming: Principles and Practice Using C++ (2nd Edition) 
+* Abrahams and Gurtovoy, Addison Wesley; Edición: 2005, ISBN-10: 0321227255, C++ Template Metaprogramming: Concepts, Tools, and Techniques from Boost and Beyond (C++ in Depth)
+* Andrei Alexandrescu, Addison-Wesley Professional; 1 edition (February 23, 2001), ISBN-10: 0201704315, Modern C++ Design: Generic Programming and Design Patterns Applied 1st Edition
+* Programming: Principles and Practice Using C++ (updated for C++11/C++14)
+* Addison-Wesley, 2 edition (May 25, 2014), ISBN-10: 0321992784, Programming: Principles and Practice Using C++ (2nd Edition) 
