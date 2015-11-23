@@ -21,10 +21,10 @@
 * [Date and Time Structs](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#date-and-time-structs)
 * [File Input/Output](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#file-inputoutput)
 * [Typecasting](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#typecasting)
-* [Data Struct](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#dataStruct)
-* [Data Struct Pointer](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#dataStructPointer)
-* [](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#)
-* [](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#)
+* [Data Struct](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#data-struct)
+* [Data Struct Pointer](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#data-struct-pointer)
+ [](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#)
+ [](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#)
 
 ### Advanced
 * [Binary File](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#binary-file)
