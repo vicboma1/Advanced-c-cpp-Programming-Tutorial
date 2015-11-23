@@ -26,7 +26,9 @@
  
 ### Intermediate 
 * [Classes](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#classes)
-* [](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#)
+* [Interface](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#interface)
+* [Abstract Classes](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#abstract-classes)
+* [Dynamic Memory](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#dynamic-memory)
 
 ### Advanced
 * [Binary File](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#binary-file)
@@ -1324,10 +1326,6 @@ int main(int argc, const char * argv[]) {
 
 ```
 
-Result
-```
-```
-
 # Intermediate
 
 ## Classes
@@ -1408,7 +1406,139 @@ arg: 1.10715
 (2,4)
 ```
 
-##
+## Interface
+```cpp
+#include <iostream>
+using namespace std;
+
+//Interface
+class IDemo
+{
+public:
+    virtual ~IDemo() {}
+    virtual void OverrideMe() = 0;
+};
+
+class Child : public IDemo
+{
+    public:
+    
+        virtual void OverrideMe()
+        {
+            cout<< "I am a child and I override IDemo method" <<endl;
+        }
+};
+
+void example1(){
+    Child child;
+    child.OverrideMe();
+}
+
+void example2(){
+    Child child;
+    IDemo* demo = &child;
+    demo->OverrideMe();
+    delete demo;
+}
+
+void showExample002(){
+    example1();
+    example2();
+    
+}
+
+int main(int argc, const char * argv[]) {
+    showExample002();
+    return 0;
+}
+
+```
+
+Result
+```
+I am a child and I override IDemo method
+I am a child and I override IDemo method
+```
+
+## Abstract Classes
+```cpp
+#include <iostream>
+
+using namespace std;
+
+class Abstract {
+public:
+    Abstract();
+    virtual void f() = 0; // pure virtual
+    virtual ~Abstract();
+};
+
+class Concrete : public Abstract {
+public:
+    Concrete();
+    void f() override {}; // non-pure virtual
+    virtual void g();     // non-pure virtual
+    virtual ~Concrete();
+};
+
+
+void showExample003(){
+    Concrete b;
+    Abstract& a = b;
+    a.f();
+}
+
+int main(int argc, const char * argv[]) {
+    showExample003();
+    return 0;
+}
+```
+
+
+## Dynamic Memory
+```cpp
+#include <iostream>
+using namespace std;
+
+class MyClass {
+    
+public:
+    int data[100];
+    MyClass() {
+        std::cout << "constructed [" << this << "]" <<endl;
+    }
+};
+
+void showExample004(){
+    std::cout << "1: ";
+    MyClass * p1 = new MyClass();
+    std::cout << "2: ";
+    MyClass * p2 = new (std::nothrow) MyClass();
+    std::cout << "3: ";
+    new (p2) MyClass();
+    std::cout << "4: ";
+    MyClass * p3 = (MyClass*) ::operator new (sizeof(MyClass));
+    
+    delete p1;
+    delete p2;
+    delete p3;
+}
+
+int main(int argc, const char * argv[]) {
+    showExample004();
+    return 0;
+}
+```
+
+Result
+```
+1: constructed [0x100300360]
+2: constructed [0x100102650]
+3: constructed [0x100102650]
+4: 
+```
+
+## Interface
 ```cpp
 ```
 
