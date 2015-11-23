@@ -20,8 +20,12 @@
 * [Returning values by reference](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#returning-values-by-reference)
 * [Date and Time Structs](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#date-and-time-structs)
 * [File Input/Output](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#file-inputoutput)
-* [Typecasting](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#file-typecasting)
-
+* [Typecasting](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#typecasting)
+* [Data Struct](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#dataStruct)
+* [Data Struct Pointer](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#dataStructPointer)
+* [](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#)
+* [](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#)
+* 
 ### Advanced
 * [Binary File](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#binary-file)
 
@@ -1189,16 +1193,133 @@ static_cast<T>
 
 ```
 
-##
+## Data Struct 
 ```cpp
+#include <iostream>
+#include <sstream>
+
+using namespace std;
+
+struct Client set(string name,string surname,string city, string phone, int _id);
+
+struct Client
+{
+    char  name[50];
+    char  surname[50];
+    char  city[100];
+    char  phone[9];
+    int   id;
+};
+
+struct Client set(string name,string surname,string city, string phone, int _id){
+    struct Client client;
+    
+    strcpy(client.name,name.c_str());
+    strcpy(client.surname, surname.c_str());
+    strcpy(client.city, city.c_str());
+    strcpy(client.phone, phone.c_str());
+    client.id = _id;
+    
+    return client;
+}
+
+void toString(struct Client cliente){
+    
+    cout << "Client name : " << cliente.name <<endl;
+    cout << "Client surname : " << cliente.surname <<endl;
+    cout << "Client city : " << cliente.city <<endl;
+    cout << "Client phone : " << cliente.phone <<endl;
+    cout << "Client id : " << cliente.id << endl << endl;
+}
+
+void showExample(){
+    struct Client c1 = set("Victor","Bolinches","Madrid","567654321",0);
+    struct Client c2 = set("Manuel","Lopez","Madrid","098654321",1);
+    
+    toString(c1);
+    toString(c2);
+}
+
+int main(int argc, const char * argv[]) {
+    showExample();
+    return 0;
+}
 ```
 
 Result
 ```
+Client name : Victor
+Client surname : Bolinches
+Client city : Madrid
+Client phone : 567654321
+Client id : 0
+
+Client name : Manuel
+Client surname : Lopez
+Client city : Madrid
+Client phone : 098654321
+Client id : 1
 ```
 
-##
+## Data Struct Pointer
 ```cpp
+
+#include <iostream>
+#include <sstream>
+
+using namespace std;
+
+
+typedef struct Client
+{
+    char  name[50];
+    char  surname[50];
+    char  city[100];
+    char  phone[9];
+    int   id;
+    
+} Client;
+
+void toString(Client* cliente);
+Client& set(string name,string surname,string city, string phone, int _id);
+
+
+Client& set(string name,string surname,string city, string phone, int _id){
+    static Client client;
+    strcpy(client.name,name.c_str());
+    strcpy(client.surname, surname.c_str());
+    strcpy(client.city, city.c_str());
+    strcpy(client.phone, phone.c_str());
+    client.id = _id;
+    
+    return client;
+}
+
+void toString(struct Client* cliente){
+    
+    cout << "Client name : " << cliente->name <<endl;
+    cout << "Client surname : " << cliente->surname <<endl;
+    cout << "Client city : " << cliente->city <<endl;
+    cout << "Client phone : " << cliente->phone <<endl;
+    cout << "Client id : " << cliente->id << endl << endl;
+}
+
+void showExample(){
+    Client c1 = set("Victor","Bolinches","Madrid","567654321",0);
+    Client c2 = set("Manuel","Lopez","Barcelona","098654321",1);
+    
+    Client* p1 = &c1;  //toString(&c1);
+    Client* p2 = &c2;  //toString(&c2);
+    
+    toString(p1);
+    toString(p2);
+}
+
+int main(int argc, const char * argv[]) {
+    showExample();
+    return 0;
+}
+
 ```
 
 Result
@@ -1273,5 +1394,7 @@ delete[] memblock;
 
 
 # Referencias : 
-* Basics File I/O, http://compsci.hunter.cuny.edu/~sweiss/resources/fileIO.pdf
-* 
+* C++ Template Metaprogramming: Concepts, Tools, and Techniques from Boost and Beyond s
+* Modern C++ Design: Generic Programming and Design Patterns Applied 1st Edition
+* Programming: Principles and Practice Using C++ (Bjarne Stroustrup) (updated for C++11/C++14)
+* Programming: Principles and Practice Using C++ (2nd Edition) 
