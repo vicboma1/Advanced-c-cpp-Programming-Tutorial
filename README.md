@@ -25,7 +25,7 @@
 * [Data Struct Pointer](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#dataStructPointer)
 * [](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#)
 * [](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#)
-* 
+
 ### Advanced
 * [Binary File](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#binary-file)
 
