@@ -23,7 +23,9 @@
 * [Typecasting](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#typecasting)
 * [Data Struct](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#data-struct)
 * [Data Struct Pointer](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#data-struct-pointer)
- 
+* [Type Enums](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#type-enums)
+* [InLine Function](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#inline-function)
+
 ### Intermediate 
 * [Classes](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#classes)
 * [Interface](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#interface)
@@ -1739,13 +1741,64 @@ Destructor Triangle 0x1002000b0
 Destructor Polygon0x1002000b0
 ```
 
-## 
+## Type Enums
 ```cpp
+#include <iostream>
+using namespace std;
+
+enum Foo { Head, Two, Three, Last };
+enum FooNumeric { HeadNum = 100 , TwoNum = 3, ThreeNum = -22, LastNum = 0 };
+
+void showExample19(){
+    
+    for ( int fooInt = Head; fooInt != Last; fooInt++ )
+    {
+        Foo foo = static_cast<Foo>(fooInt);
+        cout << "Enum: " << fooInt << " - " << foo << endl;
+    }
+}
+
+int main(int argc, const char * argv[]) {
+    showExample19();
+    return 0;
+}
 ```
 
 Result
 ```
+Enum: 0 - 0
+Enum: 1 - 1
+Enum: 2 - 2
+
 ```
+
+## InLine Function
+```cpp
+Funciones InLine
+
+#include <iostream>
+using namespace std;
+
+inline double cubo(double x){
+    return x * x * x;
+}
+
+void showExample20(){
+    double resutl = cubo(10);   // double resutl = (10 * 10 * 10);
+    cout << resutl << endl;
+}
+
+int main(int argc, const char * argv[]) {
+        showExample20();
+    return 0;
+}
+```
+
+Result
+```
+1000
+```
+
 
 #Advanced
 
