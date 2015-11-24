@@ -34,7 +34,7 @@
 * [Polymorphism - Pointers to base class](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#polymorphism---pointers-to-base-class)
 * [Polymorphism - Virtual Members](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#polymorphism---virtual-members)
 * [Dynamic Allocation and Polymorphism](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#dynamic-allocation-and-polymorphism)
-* [Clean Code : *.cpp / *.hpp](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#cleancode)
+* [Clean Code : *.cpp / *.hpp](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#clean-code)
 
 ### Advanced
 * [Binary File](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#binary-file)
