@@ -34,6 +34,7 @@
 * [Polymorphism - Pointers to base class](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#polymorphism---pointers-to-base-class)
 * [Polymorphism - Virtual Members](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#polymorphism---virtual-members)
 * [Dynamic Allocation and Polymorphism](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#dynamic-allocation-and-polymorphism)
+* [Clean Code : *.cpp / *.hpp](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#cleancode)
 
 ### Advanced
 * [Binary File](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#binary-file)
@@ -1799,6 +1800,185 @@ Result
 1000
 ```
 
+## Clean Code
+Files.hpp
+```hpp
+#ifndef Figura_hpp
+#define Figura_hpp
+
+#include <stdio.h>
+#include <sstream>
+
+using namespace std;
+class Figura {
+    
+protected:
+    float base;
+    float altura;
+
+public:
+    Figura();
+    void captura();
+    virtual string toString();
+    virtual float perimetro() = 0;
+    virtual float area() = 0;
+};
+
+#endif /* Figura_hpp */
+
+#ifndef Triangulo_hpp
+#define Triangulo_hpp
+
+#include <stdio.h>
+#include "Triangulo.hpp"
+#include "Figura.hpp"
+#include <iostream>
+#include <sstream>
+using namespace std;
+
+class Triangulo: public Figura {
+    
+public:
+    Triangulo(){}
+    string toString();
+    float perimetro();
+    float area();
+
+};
+
+#endif /* Triangulo_hpp */
+
+#ifndef Cuadrado_hpp
+#define Cuadrado_hpp
+
+#include <stdio.h>
+#include "Triangulo.hpp"
+#include "Figura.hpp"
+#include <iostream>
+#include <sstream>
+using namespace std;
+
+class Cuadrado: public Figura {
+    
+public:
+    Cuadrado(){}
+    string toString();
+    float perimetro();
+    float area();
+    
+};
+
+#endif /* Cuadrado_hpp */
+```
+
+Files.cpp
+```cpp
+#include "Figura.hpp"
+#include <iostream>
+using namespace std;
+
+Figura::Figura(){
+
+}
+
+void Figura::captura()
+{
+    cout << "CALCULO DEL AREA Y PERIMETRO" << endl;
+    cout << "Escriba la altura: ";
+    cin >> altura;
+    cout << endl;
+    cout << "Escribe la base: ";
+    cin >> base;
+    cout << endl;
+}
+
+string Figura::toString() {
+    return "";
+}
+
+#include "Triangulo.hpp"
+#include "Figura.hpp"
+#include <iostream>
+#include <sstream>
+using namespace std;
+
+string Triangulo::toString(){
+    stringstream str;
+    float perimetro = this->perimetro();
+    float area = this->area();
+    str << "Perimetro " << perimetro << " - Area: " << area << " del Triangulo";
+    return str.str();
+}
+    
+float Triangulo::perimetro(){
+    return (2 * (base + altura));
+}
+    
+float Triangulo::area(){
+    return (base * altura);
+}
+
+#include "Cuadrado.hpp"
+#include "Figura.hpp"
+#include <iostream>
+#include <sstream>
+
+using namespace std;
+
+string Cuadrado::toString(){
+    stringstream str;
+    float perimetro = this->perimetro();
+    float area = this->area();
+    str << "Perimetro " << perimetro << " - Area: " << area << " del cuadrado";
+    return str.str();
+}
+
+float Cuadrado::perimetro(){
+    return (2 * (base + altura));
+}
+
+float Cuadrado::area(){
+    return (base * altura)/2;
+}
+```
+Main
+```cpp
+#include <iostream>
+#include "Figura.hpp"
+#include "Triangulo.hpp"
+#include "Cuadrado.hpp"
+
+using namespace std;
+
+void showExample008(){
+    Figura* triangulo = new Triangulo();
+    Figura* cuadrado = new Cuadrado();
+    
+    triangulo->captura();
+    cout << triangulo->toString() << endl;
+    
+    cuadrado->captura();
+    cout << cuadrado->toString() << endl;
+}
+
+int main(int argc, const char * argv[]) {
+    showExample008();
+    return 0;
+}
+```
+
+Result
+```
+CALCULO DEL AREA Y PERIMETRO
+Escriba la altura: 321
+Escribe la base: 4
+Perimetro 650 - Area: 1284 del Triangulo
+
+CALCULO DEL AREA Y PERIMETRO
+Escriba la altura: 432
+Escribe la base: 432
+Perimetro 1728 - Area: 93312 del Cuadrado
+```
 
 #Advanced
 
