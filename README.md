@@ -2403,6 +2403,98 @@ Result
 Casting '1 + 3' to 4
 ```
 
+##Data Structures
+
+##Sequences
+
+### Vector
+
+```cpp
+#include <iostream>
+#include <sstream>
+#include <vector>
+
+using namespace std;
+
+void _vector(){
+    vector<int> *v = new vector<int>();
+    
+    
+    cout<< "Empty " << v->empty() << endl;
+
+    v->push_back(1);
+    v->push_back(12222);
+    v->push_back(2);
+    v->push_back(3);
+   
+    for(const int &i : *v) // access by const reference
+        cout << i << ' ';
+    cout << '\n';
+    
+    cout<< "size " << v->size() << endl;
+    
+    auto it = v->begin();
+    v->erase(it+0);
+
+   
+    for(auto i: *v) // access by value, the type of i is int
+        cout << i << ' ';
+    cout << '\n';
+    
+    cout<< "size " << v->size() << endl;
+
+    v->insert(it,10);
+    
+    for(auto&& i: *v) // access by reference, the type of i is int&
+        cout << i << ' ';
+    cout << '\n';
+
+    cout<< "size " << v->size() << endl;
+    
+    vector<int>::const_iterator cii;
+    for(cii = v->begin(); cii != v->end(); cii++) // access by iterator
+    {
+        cout << *cii << " ";
+    }
+     v->pop_back();
+     v->pop_back();
+     v->pop_back();
+    
+    cout <<endl;
+
+    cout<< "Size " << v->size() << endl;
+    cout<< "Empty " << v->empty() << endl;
+    v->clear();
+    cout<< "Clear " << endl;
+    cout<< "Empty " << v->empty() << endl;
+}
+
+void showExample014(){
+    _vector();
+}
+
+int main(int argc, const char * argv[]) {
+    showExample014();
+    return 0;
+}
+```
+
+Result
+```
+Empty 1
+1 12222 2 3 
+size 4
+12222 2 3 
+size 3
+10 12222 2 3 
+size 4
+10 12222 2 3 
+Size 1
+Empty 0
+Clear 
+Empty 1
+```
+
 #Advanced
 
 ## Binary File
