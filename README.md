@@ -39,7 +39,7 @@
 * [Templates](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#templates)
 * [Templates specialization](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#templates-specialization)
 * [Class Tempates Vs Templates Classes](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#templates-classes-vs-classes-templates)
-
+* [Template Functions](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#template-functions)
 
 ### Advanced
 * [Binary File](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#binary-file)
@@ -2321,6 +2321,74 @@ Pair < 99.9992 , 7.55004e+06 >
 ```
 Class template is a template used to generate template classes.
 Template class is an instance of a class template.
+```
+
+## Template Functions
+
+hpp
+```
+#ifndef Casteable_hpp
+#define Casteable_hpp
+
+#include <stdio.h>
+
+template <class T>
+    class Casteable {
+    
+    public :
+    Casteable();
+    ~Casteable();
+   
+template <class T2>
+    T add(T2 arg, T2 arg2);
+};
+
+#include "Casteable.cpp"
+#endif /* Casteable_hpp */
+
+```
+
+cpp
+```
+#ifdef Casteable_hpp
+
+template <class T>
+Casteable<T>::Casteable(){
+
+}
+
+template <class T>
+template <class T2>
+T Casteable<T>::add(T2 arg, T2 arg2){
+    return arg + arg2;
+    }
+
+#endif
+```
+Main
+```
+#include <iostream>
+#include "Casteable.hpp"
+#include <sstream>
+
+using namespace std;
+
+void showExample(){
+    Casteable<double> *casting = new Casteable<double>();
+    double cast = casting->add<double>(1.0 , 3.0);
+    std::cout << "Casting '1 + 3' to " << cast << std::endl;
+}
+
+int main(int argc, const char * argv[]) {
+    showExample();
+    return 0;
+}
+
+```
+
+Result
+```
+Casting '1 + 3' to 4
 ```
 
 #Advanced
