@@ -47,7 +47,7 @@
        * [list](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#list)
        * [Vector vs List in STL](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#vector-vs-list-in-stl)
        * [stack](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#stack)
-       * [deque](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#deque)
+       * [queue](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#deque)
 * [Associative](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#associative)
        * [set](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#set)
        * [multiset](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#multiset)
@@ -2715,8 +2715,81 @@ Back: Bolinches
 Front: Victor
 Victor Bolinches 
 Size 0
-
 ```
+
+## Associative
+
+### Set
+```cpp
+
+#include <iostream>
+#include <sstream>
+#include <set>
+
+
+using namespace std;
+
+void _set(){
+    set<string> *_set = new set<string>();
+    
+    int isEmpty = _set->empty();
+    cout<< "Empty " << isEmpty << endl;
+    cout<< "Size " << _set->size() << endl;
+    
+    _set->insert("Hello");
+    _set->insert("World");
+    _set->insert("Victor");
+    _set->insert("Bolinches");
+    
+    for(auto&& i : *_set)
+        cout << i << ' ';
+    cout << '\n';
+
+    
+    cout<< "Insert Alberto | Hello " << endl;
+    _set->insert("Alberto");
+    _set->insert("Hello");
+
+    cout<< "Count Hello " << _set->count("Hello") << endl;
+
+    for(auto&& i : *_set)
+        cout << i << ' ';
+    cout << '\n';
+    
+    cout<< "Erase " << _set->erase("Alberto") << endl;
+    cout<< "Erase " << _set->erase("Bolinches") << endl;
+    cout<< "Erase " << _set->erase("Victor") << endl;
+    
+    for(auto&& i : *_set)
+        cout << i << ' ';
+    cout << '\n';
+}
+
+void showExample014(){
+    _set();
+}
+
+int main(int argc, const char * argv[]) {
+    showExample014();
+    return 0;
+}
+```
+
+Resutl
+```
+Empty 1
+Size 0
+Bolinches Hello Victor World 
+Insert Alberto | Hello 
+Count Hello 1
+Alberto Bolinches Hello Victor World 
+Erase 1
+Erase 1
+Erase 1
+Hello World 
+```
+
+
 
 #Advanced
 
@@ -2725,7 +2798,7 @@ Size 0
 #include <iostream>
 #include <sstream>
 #include <fstream>
-
+ 
 using namespace std;
 
 void showExample000(){
@@ -2769,7 +2842,7 @@ delete[] memblock;
 ```
 
 
-# Referencias : 
+# References : 
 * Abrahams and Gurtovoy, Addison Wesley; Edición: 2005, ISBN-10: 0321227255, C++ Template Metaprogramming: Concepts, Tools, and Techniques from Boost and Beyond (C++ in Depth)
 * Andrei Alexandrescu, Addison-Wesley Professional; 1 edition (February 23, 2001), ISBN-10: 0201704315, Modern C++ Design: Generic Programming and Design Patterns Applied 1st Edition
 * Programming: Principles and Practice Using C++ (updated for C++11/C++14)
