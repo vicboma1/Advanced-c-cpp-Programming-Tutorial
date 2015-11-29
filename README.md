@@ -2137,7 +2137,7 @@ Bolinches - sehcniloB
 ## Templates
 
 hpp
-```
+```cpp
 #ifndef Box_hpp
 #define Box_hpp
 
@@ -2166,7 +2166,7 @@ public:
 ```
 
 cpp
-```
+```cpp
 #ifdef Box_hpp
 
 template <class T>
@@ -2189,7 +2189,7 @@ T Box<T>::component2(){
 ```
 
 Main
-```
+```cpp
 #include "Box.hpp"
 #include <iostream>
 using namespace std;
@@ -2225,7 +2225,7 @@ Max: 7500
 ## Templates Specialization
 
 hpp
-```
+```cpp
 #ifndef Pair_hpp
 #define Pair_hpp
 
@@ -2251,7 +2251,7 @@ public:
 ```
 
 cpp
-```
+```cpp
 #ifdef Pair_hpp
 
 template <class T1,class T2 >
@@ -2270,7 +2270,7 @@ T2 Pair<T1,T2>::component2(){
 ```
 
 Main
-```
+```cpp
 #include "Pair.hpp"
 #include <iostream>
 using namespace std;
@@ -2326,7 +2326,7 @@ Template class is an instance of a class template.
 ## Template Functions
 
 hpp
-```
+```cpp
 #ifndef Casteable_hpp
 #define Casteable_hpp
 
@@ -2349,7 +2349,7 @@ template <class T2>
 ```
 
 cpp
-```
+```cpp
 #ifdef Casteable_hpp
 
 template <class T>
@@ -2366,7 +2366,7 @@ T Casteable<T>::add(T2 arg, T2 arg2){
 #endif
 ```
 Main
-```
+```cpp
 #include <iostream>
 #include "Casteable.hpp"
 #include <sstream>
