@@ -36,6 +36,10 @@
 * [Dynamic Allocation and Polymorphism](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#dynamic-allocation-and-polymorphism)
 * [Clean Code : *.cpp / *.hpp](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#clean-code)
 * [Recursion](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#recursion)
+* [Templates](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#templates)
+* [Templates specialization](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#templates-specialization)
+* [Class Tempates Vs Templates Classes](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#class-templates-vs-templates-classes)
+
 
 ### Advanced
 * [Binary File](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#binary-file)
@@ -2129,6 +2133,196 @@ Reverse - esreveR
 Victor - rotciV
 Bolinches - sehcniloB
 ```
+
+## Templates
+
+hpp
+```
+#ifndef Box_hpp
+#define Box_hpp
+
+#include <stdio.h>
+
+template <class T>
+class Box {
+    T a, b;
+public:
+    Box (T first, T second)
+    {
+        a = first;
+        b = second;
+    }
+    
+    T getmax();
+    T component1();
+    T component2();
+};
+
+
+
+#include "Box.cpp"
+#endif /* Pair_hpp */
+
+```
+
+cpp
+```
+#ifdef Box_hpp
+
+template <class T>
+T Box<T>::getmax ()
+{
+    return  (T) a > b ? a : b;
+}
+
+template <class T>
+T Box<T>::component1(){
+    return this->a;
+}
+
+template <class T>
+T Box<T>::component2(){
+    return this->b;
+}
+
+#endif
+```
+
+Main
+```
+#include "Box.hpp"
+#include <iostream>
+using namespace std;
+
+
+void showExample(){
+    Box<int> *myobject = new Box<int>(100, 7500);
+    cout << "Box< "<< myobject->component1() <<" , " << myobject->component2() << " >" << endl;
+    cout << "Max: "<< myobject->getmax() <<endl;
+}
+
+int main (int argc, const char * argv[]) {
+    showExample();
+    return 0;
+}
+```
+
+Result
+```
+Double
+Box< 100.123 , 7500.22 >
+Max: 7500.22
+
+Float
+Box< 100e+03 , 7500e+03 >
+Max: 7500Ex1233
+
+Int
+Box< 100 , 7500 >
+Max: 7500
+```
+
+## Templates Specialization
+
+hpp
+```
+#ifndef Pair_hpp
+#define Pair_hpp
+
+#include <stdio.h>
+
+template <class T1,class T2>
+class Pair {
+    T1 a;
+    T2 b;
+public:
+    Pair (T1 first, T2 second)
+    {
+        a = first;
+        b = second;
+    }
+    
+    T1 component1();
+    T2 component2();
+};
+#include "Pair.cpp"
+#endif /* Pair_hpp */
+
+```
+
+cpp
+```
+#ifdef Pair_hpp
+
+template <class T1,class T2 >
+T1 Pair<T1,T2>::component1()
+{
+    return a;
+}
+
+template <class T1,class T2 >
+T2 Pair<T1,T2>::component2(){
+    return this->b;
+}
+
+
+#endif
+```
+
+Main
+```
+#include "Pair.hpp"
+#include <iostream>
+using namespace std;
+
+
+void pair_Int_Int(){
+    Pair<int,int> *pair = new Pair<int,int>(100, 75);
+    cout << "Pair < "<< pair->component1() << " , " << pair->component2() <<" >" << endl;
+}
+
+void pair_int_string(){
+    Pair<int,string> *pair2 = new Pair<int,string>(100, "Victor Bolinches");
+    cout << "Pair < "<< pair2->component1() << " , " << pair2->component2() <<" >" << endl;
+}
+
+void pair_string_int(){
+    Pair<string,int> *pair3 = new Pair<string,int>("Hola Mundo", 75);
+    cout << "Pair < "<< pair3->component1() << " , " << pair3->component2() <<" >" << endl;
+}
+
+void pair_double_float(){
+    Pair<double,float> *pair4 = new Pair<double,float>(99.9992213, 7550043);
+    cout << "Pair < "<< pair4->component1() << " , " << pair4->component2() <<" >" << endl;
+}
+
+void showExample010(){
+    pair_Int_Int();
+    pair_int_string();
+    pair_string_int();
+    pair_double_float();
+}
+
+int main (int argc, const char * argv[]) {
+    showExample010();
+    return 0;
+}
+```
+
+Result
+```
+Pair < 100 , 75 >
+Pair < 100 , Victor Bolinches >
+Pair < Hola Mundo , 75 >
+Pair < 99.9992 , 7.55004e+06 >
+```
+
+##Templates Classes Vs Classes Templates
+```
+Class template is a template used to generate template classes.
+Template class is an instance of a class template.
+```
+
 #Advanced
 
 ## Binary File
