@@ -2721,6 +2721,7 @@ Size 0
 
 ### Set
 ```cpp
+Sets are containers that store unique elements following a specific order.
 
 #include <iostream>
 #include <sstream>
@@ -2789,8 +2790,68 @@ Erase 1
 Hello World 
 ```
 
+### Multiset
+```cpp
+Multisets are containers that store elements following a specific order, and where multiple elements can have equivalent values.
+
+#include <iostream>
+#include <sstream>
+#include <set>
+
+using namespace std;
+
+void _multiset(){
+    
+    int a[ 10 ] = { 7, 22, 9, 1, 18, 30, 100, 22, 85, 13 };
+    int aSize = sizeof(a) / sizeof(int);
+    multiset< int, std::less< int > > intMultiset(a, a + aSize);
+    
+    for ( auto it = intMultiset.begin(); it != intMultiset.end(); ++it)
+        cout  << *it << "  ";
+    cout << endl << endl;
+    
+    std::ostream_iterator< int > output( cout, " " );
+    
+    cout << intMultiset.count( 99 ) << " values of 15 in the multiset\n\n";
+    
+    intMultiset.insert( 99 );
+    intMultiset.insert( 99 );
+    
+    cout << intMultiset.count( 99 ) << " values of 15 in the multiset\n\n";
+    
+    for ( auto it = intMultiset.begin(); it != intMultiset.end(); ++it)
+        cout << "  " << *it;
+    cout << endl << endl;
+
+}
+
+void showExample014(){
+    _multiset();
+}
+
+int main(int argc, const char * argv[]) {
+    showExample014();
+    return 0;
+}
+
+```
+
+Result
+```
+1  7  9  13  18  22  22  30  85  100  
+
+0 values of 99 in the multiset
+
+2 values of 99 in the multiset
+
+1  7  9  13  18  22  22  30  85  99 99 100
+```
+
+
 ### Map
 ```cpp
+The map<key, set<value>> will only store each value once for a specific key. 
+To do that, it will have to be able to compare the values, not just the keys.
 
 #include <iostream>
 #include <sstream>
@@ -2859,6 +2920,8 @@ size 0
 
 ## MultiMap
 ```cpp
+The multimap stores pairs of (key, value) where both key and value can appear several times.
+
 #include <iostream>
 #include <sstream>
 #include <map>
