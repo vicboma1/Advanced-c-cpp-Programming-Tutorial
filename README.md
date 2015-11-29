@@ -45,7 +45,8 @@
 * [Sequences](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#sequences)
        * [vector](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#vector)
        * [list](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#list)
-       * [stack LIFO](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#set)
+       * [Vector vs List in STL](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#vector-vs-list-in-stl)
+       * [stack](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#stack)
        * [deque](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#deque)
 * [Associative](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#associative)
        * [set](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#set)
@@ -2589,8 +2590,131 @@ list:
 * You cannot randomly access elements, so getting at a particular element in the list can be expensive.
 * Iterators remain valid even when you add or remove elements from the list.
 * If you need an array of the elements, you'll have to create a new one and add them all to it, since there is no underlying array.
+```
+
+### Stack
+
+```cpp
+
+#include <iostream>
+#include <sstream>
+#include <stack>
 
 
+using namespace std;
+
+void _stack(){
+    stack<string> *_stack = new stack<string>();
+    
+    int isEmpty = _stack->empty();
+    cout<< "Empty " << isEmpty << endl;
+    cout<< "Size " << _stack->size() << endl;
+
+    _stack->push("Hola");
+    _stack->push("Mundo");
+    
+    while(!_stack->empty()){
+        cout <<  _stack->top() << ' ';
+        _stack->pop();
+    }
+    
+    cout << '\n';
+    
+    _stack->push("Victor");
+    _stack->push("Bolinches");
+    
+    while(!_stack->empty()){
+        cout <<  _stack->top() << ' ';
+        _stack->pop();
+    }
+    
+    cout << '\n';
+    
+    cout<< "Size " << _stack->size() << endl;
+    
+}
+
+void showExample014(){
+    _stack();
+}
+
+int main(int argc, const char * argv[]) {
+    showExample014();
+    return 0;
+}
+
+```
+
+Result 
+```
+Empty 1
+Size 0
+Mundo Hola 
+Bolinches Victor 
+Size 0
+```
+
+### Qeque
+```cpp
+#include <iostream>
+#include <sstream>
+#include <queue>
+
+using namespace std;
+
+void _queue(){
+    queue<string> *_queue = new queue<string>();
+    
+    int isEmpty = _queue->empty();
+    cout<< "Empty " << isEmpty << endl;
+    cout<< "Size " << _queue->size() << endl;
+    
+    _queue->push("Hola");
+    _queue->push("Mundo");
+    
+    while(!_queue->empty()){
+        cout <<  _queue->front() << ' ';
+        _queue->pop();
+    }
+    
+    cout << '\n';
+    
+    _queue->push("Victor");
+    _queue->push("Bolinches");
+    
+    cout<< "Back " << _queue->back() << endl;
+    cout<< "Front " << _queue->front() << endl;
+    
+    while(!_queue->empty()){
+        cout <<  _queue->front() << ' ';
+        _queue->pop();
+    }
+  
+    cout << '\n';
+    
+    cout<< "Size " << _queue->size() << endl;
+}
+
+
+void showExample014(){
+    _queue();
+}
+
+int main(int argc, const char * argv[]) {
+    showExample014();
+    return 0;
+}
+```
+
+Result
+```
+Empty 1
+Size 0
+Hola Mundo 
+Back: Bolinches
+Front: Victor
+Victor Bolinches 
+Size 0
 
 ```
 
