@@ -2495,6 +2495,105 @@ Clear
 Empty 1
 ```
 
+### List
+
+```cpp
+#include <iostream>
+#include <sstream>
+#include <list>
+
+using namespace std;
+
+void _list(){
+    list<int> *_list = new list<int>();
+    
+    int isEmpty = _list->empty();
+    cout<< "Empty " << isEmpty << endl;
+    
+    if(isEmpty){
+      _list->push_back(15);
+      _list->push_back(13);
+      _list->push_back(81);
+      _list->push_back(29);
+      _list->push_back(37);
+      _list->push_back(84);
+      _list->push_back(29);
+    }
+    
+    for(auto&& i: *_list)
+        cout << i << ' ';
+    cout << '\n';
+    
+    cout<< "size " << _list->size() << endl;
+
+    _list->sort();
+    
+    
+    for(auto&& i: *_list)
+        cout << i << ' ';
+    cout << '\n';
+    
+    cout<< "Size " << _list->size() << endl;
+    cout<< "Empty " << _list->empty() << endl;
+    _list->clear();
+    cout<< "Clear " << endl;
+    cout<< "Empty " << _list->empty() << endl;
+
+}
+
+void showExample014(){
+    _list();
+}
+
+int main(int argc, const char * argv[]) {
+    showExample014();
+    return 0;
+}
+
+```
+
+Result
+```
+Empty 1
+15 13 81 29 37 84 29 
+size 7
+13 15 29 29 37 81 84 
+Size 7
+Empty 0
+Clear 
+Empty 1
+```
+
+### Vector vs List in STL
+```
+vector:
+
+* Contiguous memory.
+* Pre-allocates space for future elements, so extra space required beyond what's necessary for the elements themselves.
+* Each element only requires the space for the element type itself (no extra pointers).
+* Can re-allocate memory for the entire vector any time that you add an element.
+* Insertions at the end are constant, amortized time, but insertions elsewhere are a costly O(n).
+* Erasures at the end of the vector are constant time, but for the rest it's O(n).
+* You can randomly access its elements.
+* Iterators are invalidated if you add or remove elements to or from the vector.
+* You can easily get at the underlying array if you need an array of the elements.
+
+list:
+
+* Non-contiguous memory.
+* No pre-allocated memory. The memory overhead for the list itself is constant.
+* Each element requires extra space for the node which holds the element, including pointers to the next and previous elements in the list.
+* Never has to re-allocate memory for the whole list just because you add an element.
+* Insertions and erasures are cheap no matter where in the list they occur.
+* It's cheap to combine lists with splicing.
+* You cannot randomly access elements, so getting at a particular element in the list can be expensive.
+* Iterators remain valid even when you add or remove elements from the list.
+* If you need an array of the elements, you'll have to create a new one and add them all to it, since there is no underlying array.
+
+
+
+```
+
 #Advanced
 
 ## Binary File
@@ -2552,3 +2651,4 @@ delete[] memblock;
 * Programming: Principles and Practice Using C++ (updated for C++11/C++14)
 * Addison-Wesley, 2 edition (May 25, 2014), ISBN-10: 0321992784, Programming: Principles and Practice Using C++ (2nd Edition) 
 * Polymorphism, http://www.cplusplus.com/forum/beginner/2530/
+* Vector vs List in STL, http://stackoverflow.com/questions/2209224/vector-vs-list-in-stl
