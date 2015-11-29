@@ -2789,6 +2789,81 @@ Erase 1
 Hello World 
 ```
 
+### Map
+```cpp
+
+#include <iostream>
+#include <sstream>
+#include <map>
+
+
+using namespace std;
+
+
+void _map(){
+    map<string,int> *_map = new map<string,int>();
+    
+    int isEmpty = _map->empty();
+    cout<< "Empty " << isEmpty << endl;
+    cout<< "Size " << _map->size() << endl;
+    
+    _map->insert(pair<string,int>("Hello",100));
+    _map->insert(pair<string,int>("World",11));
+    _map->insert(pair<string,int>("Victor",32));
+    _map->insert(pair<string,int>("Bolinches",4324));
+    
+    map<string,int>::iterator it = _map->begin();
+    for (it=_map->begin(); it!=_map->end(); ++it)
+        cout << it->first << " => " << it->second << '\n';
+    
+    cout<< "Insert Alberto" << endl;
+    _map->insert(pair<string,int>("Alberto",3233));
+    
+    cout<< "size " << _map->size() << endl;
+    
+    for(it = _map->begin() ; it != _map->end() ; ++it)
+         cout << it->first << " => " << it->second << '\n';
+    
+    _map->clear();
+    
+    cout<< "size " << _map->size() << endl;
+}
+
+
+
+void showExample014(){
+   // _vector();
+   // _list();
+   // _stack();
+   // _queue();
+   // _set();
+    _map();
+}
+
+int main(int argc, const char * argv[]) {
+    showExample014();
+    return 0;
+}
+```
+
+Result 
+```
+Empty 1
+Size 0
+Bolinches => 4324
+Hello => 100
+Victor => 32
+World => 11
+Insert Alberto
+size 5
+Alberto => 3233
+Bolinches => 4324
+Hello => 100
+Victor => 32
+World => 11
+size 0
+```
+
 
 
 #Advanced
