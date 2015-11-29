@@ -41,6 +41,18 @@
 * [Class Tempates Vs Templates Classes](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#templates-classes-vs-classes-templates)
 * [Template Functions](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#template-functions)
 
+##### Data Structures
+* [Sequences](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#sequences)
+       * [vector](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#vector)
+       * [list](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#list)
+       * [stack LIFO](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#set)
+       * [deque](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#deque)
+* [Associative](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#associative)
+       * [set](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#set)
+       * [multiset](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#multiset)
+       * [map](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#map)
+       * [multimap](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#multimap)
+
 ### Advanced
 * [Binary File](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#binary-file)
 
