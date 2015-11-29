@@ -38,7 +38,7 @@
 * [Recursion](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#recursion)
 * [Templates](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#templates)
 * [Templates specialization](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#templates-specialization)
-* [Class Tempates Vs Templates Classes](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#class-templates-vs-templates-classes)
+* [Class Tempates Vs Templates Classes](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#templates-classes-vs-classes-templates)
 
 
 ### Advanced
