@@ -2829,14 +2829,7 @@ void _map(){
     cout<< "size " << _map->size() << endl;
 }
 
-
-
 void showExample014(){
-   // _vector();
-   // _list();
-   // _stack();
-   // _queue();
-   // _set();
     _map();
 }
 
@@ -2864,7 +2857,70 @@ World => 11
 size 0
 ```
 
+## MultiMap
+```cpp
+#include <iostream>
+#include <sstream>
+#include <map>
 
+using namespace std;
+
+void _multimap(){
+    multimap<string, int> *_multimap = new multimap<string, int>();
+    
+    _multimap->insert(pair<string, int>("a", 1));
+    _multimap->insert(pair<string, int>("c", 2));
+    _multimap->insert(pair<string, int>("b", 3));
+    _multimap->insert(pair<string, int>("b", 4));
+    _multimap->insert(pair<string, int>("a", 5));
+    _multimap->insert(pair<string, int>("b", 6));
+
+    cout << "Key a: " << _multimap->count("a") << endl;
+    cout << "Key b: " << _multimap->count("b") << endl;
+    cout << "Key c: " << _multimap->count("c") << endl;
+    
+    for (auto it = _multimap->begin(); it != _multimap->end(); ++it)
+        cout << "  [" << it->first << ", " << it->second << "]" << endl;
+   
+    pair<multimap<string, int>::iterator, multimap<string, int>::iterator> ppp;
+    
+    ppp = _multimap->equal_range("b");
+
+    cout << endl << "Range of \"b\" elements:" << endl;
+    for (auto it2 = ppp.first;it2 != ppp.second; ++it2)
+        cout << "  [" << (*it2).first << ", " << (*it2).second << "]" << endl;
+    
+    _multimap->clear();
+}
+
+void showExample014(){
+    _multimap();
+}
+
+int main(int argc, const char * argv[]) {
+    showExample014();
+    return 0;
+}
+```
+
+Result
+```
+Key a: 2
+Key b: 3
+Key c: 1
+  [a, 1]
+  [a, 5]
+  [b, 3]
+  [b, 4]
+  [b, 6]
+  [c, 2]
+
+Range of "b" elements:
+  [b, 3]
+  [b, 4]
+  [b, 6]
+  
+```
 
 #Advanced
 
