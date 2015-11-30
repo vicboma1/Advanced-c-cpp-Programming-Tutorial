@@ -57,7 +57,8 @@
 ### Advanced
 * [Binary File](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#binary-file)
 * [Bitwise Operators](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#bitwise-operators)
-
+* [Bit Mask](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#bit-mask)
+* [Bitset](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#bitset)
 
 # Basics
 
@@ -3203,8 +3204,77 @@ unsigned ~4 = ... 1111 1111 1011 = 4294967291
 (12 >> 4) & 0x0F = 1100 >> 4 = 0000 = 0
 
 ```
+## Bit Mask
+```cpp
+#include <iostream>
+using namespace std;
 
+void showExample002(){
+    const unsigned int lowMask = 0xF; // 0000 1111
+    
+    int num = 0xFF;
+    cout << "0xFF = 1111 1111 = 255" <<endl;
+    
+    num &= lowMask;
+    
+    std::cout << "The 4 low bits have value: " << num << endl;
+}
 
+int main(int argc, const char * argv[]) {
+    showExample002();
+    return 0;
+}
+```
+
+Result
+```
+0xFF = 1111 1111 = 255
+The 4 low bits have value: 15
+```
+
+## Bitset
+```cpp
+#include <bitset>
+#include <iostream>
+using namespace std;
+
+enum BitOptions
+{
+    OPTION_1 = 0,
+    OPTION_2 = 1,
+    OPTION_3 = 2,
+    OPTION_4 = 3,
+    OPTION_5 = 4,
+    OPTION_6 = 5,
+    OPTION_7 = 6,
+    OPTION_8 = 7
+};
+
+void showExample003(){
+    bitset<8> *bits = new bitset<8>(0x2); // 0000 0010
+    bits->set(OPTION_5);                  // 0001 0010
+    bits->flip(OPTION_6);                 // 0011 0010
+    bits->reset(OPTION_6);                // 0001 0010
+    
+    cout << "Bit 4 has value: " << bits->test(OPTION_5) << '\n';
+    cout << "Bit 5 has value: " << bits->test(OPTION_6) << '\n';
+    cout << "All the bits: " << bits << '\n';
+    
+}
+
+int main(int argc, const char * argv[]) {
+    showExample003();
+    return 0;
+}
+
+```
+
+Result
+```
+Bit 4 has value: 1
+Bit 5 has value: 0
+All the bits: 0001 0010
+```
 
 # References : 
 * Abrahams and Gurtovoy, Addison Wesley; Edición: 2005, ISBN-10: 0321227255, C++ Template Metaprogramming: Concepts, Tools, and Techniques from Boost and Beyond (C++ in Depth)
