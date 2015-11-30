@@ -59,6 +59,9 @@
 * [Bitwise Operators](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#bitwise-operators)
 * [Bit Mask](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#bit-mask)
 * [Bitset](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#bitset)
+* [XOR Encrytion/Decryption](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#xor-encrytiondecryption)
+* [Streams](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#streams)
+
 
 # Basics
 
@@ -3274,6 +3277,97 @@ Result
 Bit 4 has value: 1
 Bit 5 has value: 0
 All the bits: 0001 0010
+```
+
+## XOR Encrytion/Decryption
+
+```cpp
+#include <iostream>
+#include <sstream>
+using namespace std;
+
+static char key = 'Z';
+static int mask = 999009909;
+
+void showExample004(){
+    
+    string name = "Victor Bolinches Marin";
+    cout << name << endl;
+    cout << "Encrytion" << endl;
+    for(auto i = 0 ; i < name.size() ; i++ ){
+        name[i] = name[i] ^ key + mask;
+    }
+    
+    cout << name << endl;
+    cout << "Decryption" << endl;
+    
+    for(auto i = 0 ; i < name.size() ; i++ ){
+        name[i] = name[i] ^ key + mask;
+    }
+    
+    cout << name << endl;
+}
+
+int main(int argc, const char * argv[]) {
+    showExample004();
+    return 0;
+}
+```
+
+Result
+```
+Victor Bolinches Marin
+
+Encrytion
+\231\246\254\273\240\275\243\246\241\254\247\252\274\275\246\241
+
+Decryption
+Victor Bolinches Marin
+```
+
+## Streams
+```cpp
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+void showExample005(){
+    streampos size;
+    char * memblock;
+    
+    ifstream file ("file.bin", ios::in|ios::binary|ios::ate);
+    if (file.is_open())
+    {
+        size = file.tellg();
+        memblock = new char [size];
+        file.tellg();
+        file.seekg (0, ios::beg);
+        file.read (memblock, size);
+        file.close();
+        
+        cout << "Content is in memory: " << (size) << "bytes"<< endl;
+        cout << memblock << endl;
+        
+        delete[] memblock;
+    }
+    else
+        cout << "Unable to open file";
+}
+
+int main(int argc, const char * argv[]) {
+    showExample005();
+    return 0;
+}
+```
+
+Result
+```
+Content is in memory: 1929bytes
+get and put stream positioning
+All i/o streams objects keep internally -at least- one internal position:
+...
+
 ```
 
 # References : 
