@@ -61,6 +61,7 @@
 * [Bitset](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#bitset)
 * [XOR Encrytion/Decryption](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#xor-encrytiondecryption)
 * [Streams](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#streams)
+* [Function Pointers](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#function-pointers)
 
 
 # Basics
@@ -3370,6 +3371,75 @@ All i/o streams objects keep internally -at least- one internal position:
 
 ```
 
+## Function Pointers
+```cpp
+#include <iostream>
+using namespace std;
+
+int Muestra1();
+int Muestra2();
+
+int (*pMuestra)();
+void (*pEjecuta)(int);
+
+int Muestra1() {
+    cout << "Muestra 1" << endl;
+    return 1;
+}
+
+int Muestra2() {
+    cout << "Muestra 2" << endl;
+    return 2;
+}
+
+void Ejecuta(int resutl){
+    cout << " y ejecuta: "  << resutl << endl;
+}
+
+
+void showExample006(){
+
+        int num;
+        pEjecuta = &Ejecuta;
+    
+        
+        do {
+            cout << "Introduce un número entre 1 y 2, " << "0 para salir: ";
+            cin >> num;
+            if(num >= 1 && num <=2) {
+                switch(num) {
+                    case 1:
+                        pMuestra = &Muestra1;
+                        break;
+                    case 2:
+                        pMuestra = &Muestra2;
+                        break;
+                }
+                if(num != 0 )
+                    pEjecuta(pMuestra());
+            }
+        } while(num != 0);
+    }
+    
+    
+int main(int argc, const char * argv[]) {
+    showExample006();
+    return 0;
+}
+
+```
+
+Result
+```
+Introduce un número entre 1 y 2, 0 para salir: 2
+Muestra 2
+ y ejecuta: 2
+Introduce un número entre 1 y 2, 0 para salir: 1
+Muestra 1
+ y ejecuta: 1
+Introduce un número entre 1 y 2, 0 para salir: 0
+```
+
 # References : 
 * Abrahams and Gurtovoy, Addison Wesley; Edición: 2005, ISBN-10: 0321227255, C++ Template Metaprogramming: Concepts, Tools, and Techniques from Boost and Beyond (C++ in Depth)
 * Andrei Alexandrescu, Addison-Wesley Professional; 1 edition (February 23, 2001), ISBN-10: 0201704315, Modern C++ Design: Generic Programming and Design Patterns Applied 1st Edition
@@ -3377,3 +3447,4 @@ All i/o streams objects keep internally -at least- one internal position:
 * Addison-Wesley, 2 edition (May 25, 2014), ISBN-10: 0321992784, Programming: Principles and Practice Using C++ (2nd Edition) 
 * Polymorphism, http://www.cplusplus.com/forum/beginner/2530/
 * Vector vs List in STL, http://stackoverflow.com/questions/2209224/vector-vs-list-in-stl
+* http://c.conclase.net/curso/
