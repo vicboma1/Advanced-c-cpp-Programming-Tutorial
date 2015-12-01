@@ -62,7 +62,8 @@
 * [XOR Encrytion/Decryption](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#xor-encrytiondecryption)
 * [Streams](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#streams)
 * [Function Pointers](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#function-pointers)
-
+* [Functors](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#functors)
+* [Lambdas](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#lambdas)
 
 # Basics
 
@@ -3439,6 +3440,126 @@ Muestra 1
  y ejecuta: 1
 Introduce un número entre 1 y 2, 0 para salir: 0
 ```
+
+## Functors
+```cpp
+#include <iostream>
+using namespace std;
+
+class Math
+{
+private:
+    int _x;
+    
+public:
+    
+    Math (int x) : _x( x ) {}
+    
+    int operator+ (int y) { return _x + y; }
+    int operator- (int y) { return _x - y; }
+    int operator* (int y) { return _x * y; }
+};
+
+
+void showExample007(){
+    Math *math =  new Math(50);
+    cout << "50 math->operator+(69) = " << math->operator+(69) << endl;
+    cout << "50 math->operator-(69) = " << math->operator-(69) << endl;
+    cout << "50 math->operator*(69) = " << math->operator*(69) << endl;
+
+}
+
+int main(int argc, const char * argv[]) {
+    showExample007();
+    return 0;
+}
+```
+
+Result
+```
+50 math->operator+(69) = 119
+50 math->operator-(69) = -19
+50 math->operator*(69) = -19
+```
+
+## Lambdas
+```cpp
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+void functionLambda(){
+    vector<int> c { 1,2,3,4,5,6,7 };
+    int x = 5;
+    c.erase(
+            std::remove_if(
+                           c.begin(),
+                           c.end(),
+                           [x](int n) { return n < x; } ),
+            c.end()
+        );
+    
+    cout << "c: ";
+    
+    for (auto i: c) {
+        std::cout << i << ' ';
+    }
+    
+    cout << '\n';
+    
+    function<int (int)> func = [](int i) { return i + 4; };
+    cout << "func: " << func(6) << '\n';
+}
+
+void functionVoidInline(){
+    auto func = [] () { cout << "function Void Inline" << endl; };
+    func();
+}
+
+void functionIntInline(){
+    auto func = [] () -> int { cout << "function Int Inline" << endl << "result: "; return -999; };
+    cout  << func()  << endl;
+}
+
+void bucles(){
+    vector<int> *vec = new vector<int>();
+    vec->push_back(123);
+    vec->push_back(221);
+    vec->push_back(32);
+    vec->push_back(1);
+    for_each( vec->begin(), vec->end(), [] (int val)
+    {
+        cout << val << endl;
+    });
+}
+
+void showExample008(){
+    functionVoidInline();
+    functionIntInline();
+    bucles();
+    functionLambda();
+}
+
+int main(int argc, const char * argv[]) {
+    showExample008();
+    return 0;
+}
+```
+
+Result
+```
+function Void Inline
+function Int Inline
+result: -999
+123
+221
+32
+1
+c: 5 6 7 
+func: 10
+```
+
 
 # References : 
 * Abrahams and Gurtovoy, Addison Wesley; Edición: 2005, ISBN-10: 0321227255, C++ Template Metaprogramming: Concepts, Tools, and Techniques from Boost and Beyond (C++ in Depth)
