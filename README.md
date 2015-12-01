@@ -67,7 +67,8 @@
 * [Auto_ptr](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#auto_ptr)
 * [Dynamic Memory vs Auto_ptr](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#dynamic-memory-vs-auto_ptr)
 * [Double Free Attack](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#double-free-attack)
-
+* [Multiple Inheritance](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#multiple-inheritance)
+* [Virtual Inheritance](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#virtual-inheritance)
 
 # Basics
 
@@ -3682,6 +3683,98 @@ char *buf2R1 = (null),  Address = 1606416240
 char *buf1R1 = (null),  Address = 1606416248
 char *buf2R2 = (null),  Address = 1606416232
 char *buf3R2 = (null),  Address = 1606416224
+```
+
+## Multiple Inheritance
+```cpp
+#include <iostream>
+
+class A {
+    public :
+    virtual void f();
+};
+
+class B {
+    public:
+    virtual void f();
+};
+
+class C : public A ,public B {
+    public :
+    void f(){}
+};
+
+void showExample011(){
+    C *pc = new C;
+    pc->f();
+    pc->A::f();
+    pc->B::f();
+    
+    A* pa = pc;
+    pc->f();
+
+}
+
+int main(int argc, const char * argv[]) {
+    showExample011();
+    return 0;
+}
+```
+
+## Virtual Inheritance
+
+```ccp
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Base {
+public:
+protected:
+    int data_;
+};
+
+class Child1 : public virtual Base {
+    public:
+           ...
+};
+
+class Child2 : public virtual Base {
+    
+    public:
+             ...
+};
+
+class Join : public Child1, public Child2 {
+public:
+    int method()
+    {
+        data_ = 1;
+        return data_;
+    }
+};
+
+void showExample012()
+{
+    Join *j = new Join();
+    Base *b = j;
+    
+    cout << j->method() << endl;
+    cout << b << endl;
+}
+
+int main(int argc, const char * argv[]) {
+    showExample012();
+    return 0;
+}
+
+```
+
+Result 
+```
+1
+0x1002000b0
 ```
 
 
