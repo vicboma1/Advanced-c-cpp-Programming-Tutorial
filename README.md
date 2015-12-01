@@ -65,7 +65,8 @@
 * [Functors](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#functors)
 * [Lambdas](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#lambdas)
 * [Auto_ptr](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#auto_ptr)
-* [Dynamic Memory vs Auto_ptr](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#dynamic-memory-vs-auto-auto_ptr)
+* [Dynamic Memory vs Auto_ptr](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#dynamic-memory-vs-auto_ptr)
+* [Double Free Attack](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#double-free-attack)
 
 
 # Basics
@@ -3631,6 +3632,58 @@ Gotchas
     auto_ptr objects are not guaranteed to work correctly with the standard template library containers
 ```
 
+## Double Free attack
+```c
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+#define BUFSIZER1   512
+#define BUFSIZER2   ((BUFSIZER1/2) - 8)
+
+void showExample010(int argc, const char * argv[]){
+    char *buf1R1;
+    char *buf2R1;
+    char *buf2R2;
+    char *buf3R2;
+    
+    buf1R1 = (char *) malloc(BUFSIZER1);
+    buf2R1 = (char *) malloc(BUFSIZER1);
+    
+    free(buf2R1);
+    printf("char *buf2R1 = %c,  Address = %u\n", *buf2R1, &buf2R1);
+
+    
+    buf2R2 = (char *) malloc(BUFSIZER2);
+    buf3R2 = (char *) malloc(BUFSIZER2);
+    
+    strncpy(buf2R1, *argv+1, BUFSIZER1-1);
+   
+    free(buf1R1);
+    printf("char *buf1R1 = %c,  Address = %u\n", *buf1R1, &buf1R1);
+    free(buf2R2);
+    printf("char *buf2R2 = %c,  Address = %u\n", *buf2R2, &buf2R2);
+    free(buf3R2);
+    printf("char *buf3R2 = %c,  Address = %u\n", *buf3R2, &buf3R2);
+    
+}
+
+int main(int argc, const char * argv[]) {
+    showExample010(argc, argv);
+    return 0;
+}
+```
+
+Result
+```
+char *buf2R1 = (null),  Address = 1606416240
+char *buf1R1 = (null),  Address = 1606416248
+char *buf2R2 = (null),  Address = 1606416232
+char *buf3R2 = (null),  Address = 1606416224
+```
+
 
 # References : 
 * Abrahams and Gurtovoy, Addison Wesley; Edición: 2005, ISBN-10: 0321227255, C++ Template Metaprogramming: Concepts, Tools, and Techniques from Boost and Beyond (C++ in Depth)
@@ -3642,3 +3695,5 @@ Gotchas
 * Auto, http://c.conclase.net
 * Lambdas C++11, http://en.cppreference.com/w/cpp/language/lambda
 * Auto_ptr, http://www.cprogramming.com/tutorial/auto_ptr.html
+* Yves Younan, Wouter Joosen, Frank Piessens, Hans Van den Eynden, DistriNet, Katholieke Universiteit Leuven, Belgium - Improving memory management security for C and C++
+
