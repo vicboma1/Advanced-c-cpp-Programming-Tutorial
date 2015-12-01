@@ -64,6 +64,9 @@
 * [Function Pointers](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#function-pointers)
 * [Functors](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#functors)
 * [Lambdas](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#lambdas)
+* [Auto_ptr](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#auto_ptr)
+* [Dynamic Memory vs Auto_ptr](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#dynamic-memory-vs-auto-auto_ptr)
+
 
 # Basics
 
@@ -3560,6 +3563,74 @@ c: 5 6 7
 func: 10
 ```
 
+## Auto_ptr
+```cpp
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+void dynamicMemory(){
+    vector<int> *v = new vector<int>();
+    v->push_back(1);
+    v->push_back(22);
+    v->push_back(333);
+    
+    for(auto&& i : *v){
+        cout<< i << endl;
+    }
+    
+    delete v;
+}
+
+void Auto_PTR(){
+    auto_ptr<vector<int>> v(new vector<int>());
+    
+    v->push_back(123);
+    v->push_back(6213);
+    v->push_back(7784);
+    
+    for(auto&& i : *v){
+        cout<< i << endl;
+    }
+    
+    
+}
+
+void showExample009(){
+    dynamicMemory();
+    Auto_PTR();
+}
+
+int main(int argc, const char * argv[]) {
+    showExample009();
+    return 0;
+}
+```
+
+Result
+```
+1
+22
+333
+123
+6213
+7784
+```
+
+## Dynamic Memory vs Auto_ptr
+```
+The Good
+
+    auto_ptr objects store pointers and handle deleting the pointer when the auto_ptr object goes out of scope
+    Using auto_ptr helps avoid memory leaks associated with exceptions and minimizes the amount of cleanup code required
+
+Gotchas
+
+    Copying an auto_ptr changes the object being copied by setting the contents to NULL
+    auto_ptr objects are not guaranteed to work correctly with the standard template library containers
+```
+
 
 # References : 
 * Abrahams and Gurtovoy, Addison Wesley; Edición: 2005, ISBN-10: 0321227255, C++ Template Metaprogramming: Concepts, Tools, and Techniques from Boost and Beyond (C++ in Depth)
@@ -3568,4 +3639,6 @@ func: 10
 * Addison-Wesley, 2 edition (May 25, 2014), ISBN-10: 0321992784, Programming: Principles and Practice Using C++ (2nd Edition) 
 * Polymorphism, http://www.cplusplus.com/forum/beginner/2530/
 * Vector vs List in STL, http://stackoverflow.com/questions/2209224/vector-vs-list-in-stl
-* http://c.conclase.net/curso/
+* Auto, http://c.conclase.net
+* Lambdas C++11, http://en.cppreference.com/w/cpp/language/lambda
+* Auto_ptr, http://www.cprogramming.com/tutorial/auto_ptr.html
