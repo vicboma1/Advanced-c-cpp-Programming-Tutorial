@@ -7,6 +7,160 @@
 	objects = {
 
 /* Begin PBXContainerItemProxy section */
+		6414038E1C088767003E3FFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6414037F1C088766003E3FFD /* 010 - Templates.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 641403751C088766003E3FFD;
+			remoteInfo = "010 - Templates";
+		};
+		6469D4C21C04B81B00E8D58A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6469D4A41C04B81A00E8D58A /* 19 - Type enum.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6469D49A1C04B81A00E8D58A;
+			remoteInfo = "19 - Type enum";
+		};
+		6469D4DB1C04C6F500E8D58A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6469D4D71C04C6F400E8D58A /* 20 - Inline Functions.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6469D4CD1C04C6F400E8D58A;
+			remoteInfo = "20 - Inline Functions";
+		};
+		6469D4F41C04D8BF00E8D58A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6469D4F01C04D8BF00E8D58A /* 008 - Clean code.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6469D4E61C04D8BF00E8D58A;
+			remoteInfo = "008 - Clean code";
+		};
+		6469D53C1C05E6AF00E8D58A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6469D52F1C05E6AE00E8D58A /* 009 - recursion.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6469D5251C05E6AE00E8D58A;
+			remoteInfo = "009 - recursion";
+		};
+		64AC27B61C0B16FA00E612C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64AC27A51C0B16F900E612C3 /* 012 - templateClassesVsClassesTemplates.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64AC279B1C0B16F900E612C3;
+			remoteInfo = "012 - templateClassesVsClassesTemplates";
+		};
+		64AC27E21C0B244100E612C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64AC27DE1C0B244000E612C3 /* 013 - Template function.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64AC27D41C0B244000E612C3;
+			remoteInfo = "013 - Template function";
+		};
+		64AC27FE1C0B5E3200E612C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64AC27FA1C0B5E3100E612C3 /* 014 - Data Structures.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64AC27F01C0B5E3100E612C3;
+			remoteInfo = "014 - Data Structures";
+		};
+		64AC28311C0CF48300E612C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 641403BC1C08EA50003E3FFD /* 011 - templates-specialization.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 641403B21C08EA50003E3FFD;
+			remoteInfo = "011 - templates-specialization";
+		};
+		64AC28601C0CF65900E612C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64AC285C1C0CF65800E612C3 /* 001 - Bitwise Operators.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64AC28521C0CF65800E612C3;
+			remoteInfo = "001 - Bitwise Operators";
+		};
+		64AC28791C0D055B00E612C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64AC28751C0D055A00E612C3 /* 003 - bitset.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64AC286B1C0D055A00E612C3;
+			remoteInfo = "003 - bitset";
+		};
+		64AC28921C0D069900E612C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64AC288E1C0D069800E612C3 /* 002 - bit Mask.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64AC28841C0D069800E612C3;
+			remoteInfo = "002 - bit Mask";
+		};
+		64AC28AB1C0D08C300E612C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64AC28A71C0D08C200E612C3 /* 004 - xor Encription.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64AC289D1C0D08C200E612C3;
+			remoteInfo = "004 - xor Encription";
+		};
+		64AC28E01C0D163A00E612C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64AC28DC1C0D163A00E612C3 /* 006 - Function Pointers.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64AC28D21C0D163A00E612C3;
+			remoteInfo = "006 - Function Pointers";
+		};
+		64AC29171C0E4E0400E612C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64AC28C01C0D0DF500E612C3 /* 005 - Streams.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64AC28B61C0D0DF500E612C3;
+			remoteInfo = "005 - Streams";
+		};
+		64AC294E1C0E515900E612C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64AC294A1C0E515900E612C3 /* 007 - Functors.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64AC29401C0E515900E612C3;
+			remoteInfo = "007 - Functors";
+		};
+		64AC29671C0E546C00E612C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64AC29631C0E546B00E612C3 /* 008 - Lambdas.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64AC29591C0E546B00E612C3;
+			remoteInfo = "008 - Lambdas";
+		};
+		64AC29801C0E594D00E612C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64AC297C1C0E594D00E612C3 /* 009 - Auto ptr.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64AC29721C0E594D00E612C3;
+			remoteInfo = "009 - Auto ptr";
+		};
+		64AC29991C0E5F1200E612C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64AC29951C0E5F1100E612C3 /* 010 - Double free attack.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64AC298B1C0E5F1100E612C3;
+			remoteInfo = "010 - Double free attack";
+		};
+		64AC29B51C0E623B00E612C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64AC29B11C0E623A00E612C3 /* 011 - Multiple Inheritance.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64AC29A71C0E623A00E612C3;
+			remoteInfo = "011 - Multiple Inheritance";
+		};
+		64AC29CE1C0E63A100E612C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64AC29CA1C0E63A000E612C3 /* 012 - Virtual inheritance.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64AC29C01C0E63A000E612C3;
+			remoteInfo = "012 - Virtual inheritance";
+		};
+		64AC29E71C0E6B2D00E612C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64AC29E31C0E6B2C00E612C3 /* 013 - Virtual destructor.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64AC29D91C0E6B2C00E612C3;
+			remoteInfo = "013 - Virtual destructor";
+		};
 		64BCD2461C0292C30087623E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 64BCD2421C0292C20087623E /* 01 - Conditionals.xcodeproj */;
@@ -168,6 +322,27 @@
 			remoteGlobalIDString = 64BCD4B31C03D8AB0087623E;
 			remoteInfo = "004 - Dynamic Memory";
 		};
+		64BCD50D1C03DB640087623E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64BCD5041C03DB640087623E /* 005 - Polymorphism.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64BCD4FA1C03DB640087623E;
+			remoteInfo = "005 - Polymorphism";
+		};
+		64BCD53B1C03DD540087623E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64BCD5371C03DD530087623E /* 006 - Polymorphism-Virtual-Methods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64BCD52D1C03DD530087623E;
+			remoteInfo = "006 - Polymorphism-Virtual-Methods";
+		};
+		64BCD5561C03DE430087623E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64BCD5521C03DE420087623E /* 007 - Dynamic Allocation and Polymorphism.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64BCD5481C03DE420087623E;
+			remoteInfo = "007 - Dynamic Allocation and Polymorphism";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -183,6 +358,28 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6414037F1C088766003E3FFD /* 010 - Templates.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "010 - Templates.xcodeproj"; path = "000 - intermediated/010 - Templates/010 - Templates.xcodeproj"; sourceTree = "<group>"; };
+		641403BC1C08EA50003E3FFD /* 011 - templates-specialization.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "011 - templates-specialization.xcodeproj"; path = "000 - intermediated/011-templates-specialization/011 - templates-specialization.xcodeproj"; sourceTree = "<group>"; };
+		6469D4A41C04B81A00E8D58A /* 19 - Type enum.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "19 - Type enum.xcodeproj"; path = "19 - Type enum/19 - Type enum.xcodeproj"; sourceTree = "<group>"; };
+		6469D4D71C04C6F400E8D58A /* 20 - Inline Functions.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "20 - Inline Functions.xcodeproj"; path = "20 - Inline Functions/20 - Inline Functions.xcodeproj"; sourceTree = "<group>"; };
+		6469D4F01C04D8BF00E8D58A /* 008 - Clean code.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "008 - Clean code.xcodeproj"; path = "000 - intermediated/008 - Clean code/008 - Clean code.xcodeproj"; sourceTree = "<group>"; };
+		6469D52F1C05E6AE00E8D58A /* 009 - recursion.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "009 - recursion.xcodeproj"; path = "000 - intermediated/009 - recursion/009 - recursion.xcodeproj"; sourceTree = "<group>"; };
+		64AC27A51C0B16F900E612C3 /* 012 - templateClassesVsClassesTemplates.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "012 - templateClassesVsClassesTemplates.xcodeproj"; path = "000 - intermediated/012 - templateClassesVsClassesTemplates/012 - templateClassesVsClassesTemplates.xcodeproj"; sourceTree = "<group>"; };
+		64AC27DE1C0B244000E612C3 /* 013 - Template function.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "013 - Template function.xcodeproj"; path = "000 - intermediated/013 - Template function/013 - Template function.xcodeproj"; sourceTree = "<group>"; };
+		64AC27FA1C0B5E3100E612C3 /* 014 - Data Structures.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "014 - Data Structures.xcodeproj"; path = "000 - intermediated/014 - Data Structures/014 - Data Structures.xcodeproj"; sourceTree = "<group>"; };
+		64AC285C1C0CF65800E612C3 /* 001 - Bitwise Operators.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "001 - Bitwise Operators.xcodeproj"; path = "01 - advanced/001 - Bitwise Operators/001 - Bitwise Operators.xcodeproj"; sourceTree = "<group>"; };
+		64AC28751C0D055A00E612C3 /* 003 - bitset.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "003 - bitset.xcodeproj"; path = "01 - advanced/003 - bitset/003 - bitset.xcodeproj"; sourceTree = "<group>"; };
+		64AC288E1C0D069800E612C3 /* 002 - bit Mask.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "002 - bit Mask.xcodeproj"; path = "01 - advanced/002 - bit Mask/002 - bit Mask.xcodeproj"; sourceTree = "<group>"; };
+		64AC28A71C0D08C200E612C3 /* 004 - xor Encription.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "004 - xor Encription.xcodeproj"; path = "01 - advanced/004 - xor Encription/004 - xor Encription.xcodeproj"; sourceTree = "<group>"; };
+		64AC28C01C0D0DF500E612C3 /* 005 - Streams.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "005 - Streams.xcodeproj"; path = "01 - advanced/005 - Streams/005 - Streams.xcodeproj"; sourceTree = "<group>"; };
+		64AC28DC1C0D163A00E612C3 /* 006 - Function Pointers.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "006 - Function Pointers.xcodeproj"; path = "01 - advanced/006 - Function Pointers/006 - Function Pointers.xcodeproj"; sourceTree = "<group>"; };
+		64AC294A1C0E515900E612C3 /* 007 - Functors.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "007 - Functors.xcodeproj"; path = "01 - advanced/007 - Functors/007 - Functors.xcodeproj"; sourceTree = "<group>"; };
+		64AC29631C0E546B00E612C3 /* 008 - Lambdas.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "008 - Lambdas.xcodeproj"; path = "01 - advanced/008 - Lambdas/008 - Lambdas.xcodeproj"; sourceTree = "<group>"; };
+		64AC297C1C0E594D00E612C3 /* 009 - Auto ptr.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "009 - Auto ptr.xcodeproj"; path = "01 - advanced/009 - Auto ptr/009 - Auto ptr.xcodeproj"; sourceTree = "<group>"; };
+		64AC29951C0E5F1100E612C3 /* 010 - Double free attack.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "010 - Double free attack.xcodeproj"; path = "01 - advanced/010 - Double free attack/010 - Double free attack.xcodeproj"; sourceTree = "<group>"; };
+		64AC29B11C0E623A00E612C3 /* 011 - Multiple Inheritance.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "011 - Multiple Inheritance.xcodeproj"; path = "01 - advanced/011 - Multiple Inheritance/011 - Multiple Inheritance.xcodeproj"; sourceTree = "<group>"; };
+		64AC29CA1C0E63A000E612C3 /* 012 - Virtual inheritance.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "012 - Virtual inheritance.xcodeproj"; path = "01 - advanced/012 - Virtual inheritance/012 - Virtual inheritance.xcodeproj"; sourceTree = "<group>"; };
+		64AC29E31C0E6B2C00E612C3 /* 013 - Virtual destructor.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "013 - Virtual destructor.xcodeproj"; path = "01 - advanced/013 - Virtual destructor/013 - Virtual destructor.xcodeproj"; sourceTree = "<group>"; };
 		64BCD1D61C02900D0087623E /* tutorial */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = tutorial; sourceTree = BUILT_PRODUCTS_DIR; };
 		64BCD2421C0292C20087623E /* 01 - Conditionals.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "01 - Conditionals.xcodeproj"; path = "01 - Conditionals/01 - Conditionals.xcodeproj"; sourceTree = "<group>"; };
 		64BCD25B1C0292E60087623E /* 02 - Loops.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "02 - Loops.xcodeproj"; path = "02 - Loops/02 - Loops.xcodeproj"; sourceTree = "<group>"; };
@@ -207,6 +404,9 @@
 		64BCD48B1C03CC900087623E /* 002 - Interface.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "002 - Interface.xcodeproj"; path = "000 - intermediated/002 - Interface/002 - Interface.xcodeproj"; sourceTree = "<group>"; };
 		64BCD4A41C03D22F0087623E /* 003 - Abstract classes.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "003 - Abstract classes.xcodeproj"; path = "000 - intermediated/003 - Abstract classes/003 - Abstract classes.xcodeproj"; sourceTree = "<group>"; };
 		64BCD4BD1C03D8AB0087623E /* 004 - Dynamic Memory.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "004 - Dynamic Memory.xcodeproj"; path = "000 - intermediated/004 - Dynamic Memory/004 - Dynamic Memory.xcodeproj"; sourceTree = "<group>"; };
+		64BCD5041C03DB640087623E /* 005 - Polymorphism.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "005 - Polymorphism.xcodeproj"; path = "000 - intermediated/005 - Polymorphism/005 - Polymorphism.xcodeproj"; sourceTree = "<group>"; };
+		64BCD5371C03DD530087623E /* 006 - Polymorphism-Virtual-Methods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "006 - Polymorphism-Virtual-Methods.xcodeproj"; path = "000 - intermediated/006 - Polymorphism-Virtual-Methods/006 - Polymorphism-Virtual-Methods.xcodeproj"; sourceTree = "<group>"; };
+		64BCD5521C03DE420087623E /* 007 - Dynamic Allocation and Polymorphism.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "007 - Dynamic Allocation and Polymorphism.xcodeproj"; path = "000 - intermediated/007 - Dynamic Allocation and Polymorphism/007 - Dynamic Allocation and Polymorphism.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +420,182 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		641403801C088766003E3FFD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6414038F1C088767003E3FFD /* 010 - Templates */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6469D4A51C04B81A00E8D58A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6469D4C31C04B81B00E8D58A /* 19 - Type enum */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6469D4D81C04C6F400E8D58A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6469D4DC1C04C6F500E8D58A /* 20 - Inline Functions */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6469D4F11C04D8BF00E8D58A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6469D4F51C04D8BF00E8D58A /* 008 - Clean code */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6469D5301C05E6AE00E8D58A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6469D53D1C05E6AF00E8D58A /* 009 - recursion */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64AC27A61C0B16F900E612C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64AC27B71C0B16FA00E612C3 /* 012 - templateClassesVsClassesTemplates */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64AC27DF1C0B244000E612C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64AC27E31C0B244100E612C3 /* 013 - Template function */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64AC27FB1C0B5E3100E612C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64AC27FF1C0B5E3200E612C3 /* 014 - Data Structures */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64AC28221C0CF47E00E612C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64AC28321C0CF48300E612C3 /* 011 - templates-specialization */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64AC285D1C0CF65800E612C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64AC28611C0CF65900E612C3 /* 001 - Bitwise Operators */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64AC28761C0D055A00E612C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64AC287A1C0D055B00E612C3 /* 003 - bitset */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64AC288F1C0D069800E612C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64AC28931C0D069900E612C3 /* 002 - bit Mask */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64AC28A81C0D08C200E612C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64AC28AC1C0D08C300E612C3 /* 004 - xor Encription */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64AC28DD1C0D163A00E612C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64AC28E11C0D163A00E612C3 /* 006 - Function Pointers */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64AC290A1C0E4E0400E612C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64AC29181C0E4E0400E612C3 /* 005 - Streams */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64AC294B1C0E515900E612C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64AC294F1C0E515900E612C3 /* 007 - Functors */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64AC29641C0E546B00E612C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64AC29681C0E546C00E612C3 /* 008 - Lambdas */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64AC297D1C0E594D00E612C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64AC29811C0E594D00E612C3 /* 009 - Auto ptr */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64AC29961C0E5F1100E612C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64AC299A1C0E5F1200E612C3 /* 010 - Double free attack */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64AC29B21C0E623A00E612C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64AC29B61C0E623B00E612C3 /* 011 - Multiple Inheritance */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64AC29CB1C0E63A000E612C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64AC29CF1C0E63A100E612C3 /* 012 - Virtual inheritance */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64AC29E41C0E6B2C00E612C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64AC29E81C0E6B2D00E612C3 /* 013 - Virtual destructor */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		64BCD1CD1C02900D0087623E = {
 			isa = PBXGroup;
 			children = (
@@ -249,6 +625,19 @@
 		64BCD1FA1C0291710087623E /* 03 - advanced */ = {
 			isa = PBXGroup;
 			children = (
+				64AC29E31C0E6B2C00E612C3 /* 013 - Virtual destructor.xcodeproj */,
+				64AC29CA1C0E63A000E612C3 /* 012 - Virtual inheritance.xcodeproj */,
+				64AC29B11C0E623A00E612C3 /* 011 - Multiple Inheritance.xcodeproj */,
+				64AC29951C0E5F1100E612C3 /* 010 - Double free attack.xcodeproj */,
+				64AC297C1C0E594D00E612C3 /* 009 - Auto ptr.xcodeproj */,
+				64AC29631C0E546B00E612C3 /* 008 - Lambdas.xcodeproj */,
+				64AC294A1C0E515900E612C3 /* 007 - Functors.xcodeproj */,
+				64AC28DC1C0D163A00E612C3 /* 006 - Function Pointers.xcodeproj */,
+				64AC28C01C0D0DF500E612C3 /* 005 - Streams.xcodeproj */,
+				64AC28A71C0D08C200E612C3 /* 004 - xor Encription.xcodeproj */,
+				64AC288E1C0D069800E612C3 /* 002 - bit Mask.xcodeproj */,
+				64AC28751C0D055A00E612C3 /* 003 - bitset.xcodeproj */,
+				64AC285C1C0CF65800E612C3 /* 001 - Bitwise Operators.xcodeproj */,
 			);
 			name = "03 - advanced";
 			sourceTree = "<group>";
@@ -256,6 +645,8 @@
 		64BCD1FB1C0291800087623E /* 01 - basics */ = {
 			isa = PBXGroup;
 			children = (
+				6469D4D71C04C6F400E8D58A /* 20 - Inline Functions.xcodeproj */,
+				6469D4A41C04B81A00E8D58A /* 19 - Type enum.xcodeproj */,
 				64BCD4041C0294A50087623E /* 18 - Data Struct Pointer.xcodeproj */,
 				64BCD3EB1C0294760087623E /* 17 - Data Structs.xcodeproj */,
 				64BCD3B91C0294010087623E /* 16 - Typecasting.xcodeproj */,
@@ -434,6 +825,16 @@
 		64BCD4361C03CA4E0087623E /* 02 - intermediate */ = {
 			isa = PBXGroup;
 			children = (
+				64AC27FA1C0B5E3100E612C3 /* 014 - Data Structures.xcodeproj */,
+				64AC27DE1C0B244000E612C3 /* 013 - Template function.xcodeproj */,
+				64AC27A51C0B16F900E612C3 /* 012 - templateClassesVsClassesTemplates.xcodeproj */,
+				641403BC1C08EA50003E3FFD /* 011 - templates-specialization.xcodeproj */,
+				6414037F1C088766003E3FFD /* 010 - Templates.xcodeproj */,
+				6469D52F1C05E6AE00E8D58A /* 009 - recursion.xcodeproj */,
+				6469D4F01C04D8BF00E8D58A /* 008 - Clean code.xcodeproj */,
+				64BCD5521C03DE420087623E /* 007 - Dynamic Allocation and Polymorphism.xcodeproj */,
+				64BCD5371C03DD530087623E /* 006 - Polymorphism-Virtual-Methods.xcodeproj */,
+				64BCD5041C03DB640087623E /* 005 - Polymorphism.xcodeproj */,
 				64BCD4BD1C03D8AB0087623E /* 004 - Dynamic Memory.xcodeproj */,
 				64BCD4A41C03D22F0087623E /* 003 - Abstract classes.xcodeproj */,
 				64BCD48B1C03CC900087623E /* 002 - Interface.xcodeproj */,
@@ -470,6 +871,30 @@
 			isa = PBXGroup;
 			children = (
 				64BCD4C21C03D8AC0087623E /* 004 - Dynamic Memory */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64BCD5051C03DB640087623E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64BCD50E1C03DB640087623E /* 005 - Polymorphism */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64BCD5381C03DD530087623E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64BCD53C1C03DD540087623E /* 006 - Polymorphism-Virtual-Methods */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64BCD5531C03DE420087623E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64BCD5571C03DE430087623E /* 007 - Dynamic Allocation and Polymorphism */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -524,8 +949,16 @@
 					ProjectRef = 64BCD4301C0296590087623E /* 00 - Intro.xcodeproj */;
 				},
 				{
+					ProductGroup = 64AC285D1C0CF65800E612C3 /* Products */;
+					ProjectRef = 64AC285C1C0CF65800E612C3 /* 001 - Bitwise Operators.xcodeproj */;
+				},
+				{
 					ProductGroup = 64BCD45E1C03CB840087623E /* Products */;
 					ProjectRef = 64BCD45D1C03CB840087623E /* 001 - Classes.xcodeproj */;
+				},
+				{
+					ProductGroup = 64AC288F1C0D069800E612C3 /* Products */;
+					ProjectRef = 64AC288E1C0D069800E612C3 /* 002 - bit Mask.xcodeproj */;
 				},
 				{
 					ProductGroup = 64BCD48C1C03CC900087623E /* Products */;
@@ -536,12 +969,96 @@
 					ProjectRef = 64BCD4A41C03D22F0087623E /* 003 - Abstract classes.xcodeproj */;
 				},
 				{
+					ProductGroup = 64AC28761C0D055A00E612C3 /* Products */;
+					ProjectRef = 64AC28751C0D055A00E612C3 /* 003 - bitset.xcodeproj */;
+				},
+				{
 					ProductGroup = 64BCD4BE1C03D8AB0087623E /* Products */;
 					ProjectRef = 64BCD4BD1C03D8AB0087623E /* 004 - Dynamic Memory.xcodeproj */;
 				},
 				{
+					ProductGroup = 64AC28A81C0D08C200E612C3 /* Products */;
+					ProjectRef = 64AC28A71C0D08C200E612C3 /* 004 - xor Encription.xcodeproj */;
+				},
+				{
+					ProductGroup = 64BCD5051C03DB640087623E /* Products */;
+					ProjectRef = 64BCD5041C03DB640087623E /* 005 - Polymorphism.xcodeproj */;
+				},
+				{
+					ProductGroup = 64AC290A1C0E4E0400E612C3 /* Products */;
+					ProjectRef = 64AC28C01C0D0DF500E612C3 /* 005 - Streams.xcodeproj */;
+				},
+				{
+					ProductGroup = 64AC28DD1C0D163A00E612C3 /* Products */;
+					ProjectRef = 64AC28DC1C0D163A00E612C3 /* 006 - Function Pointers.xcodeproj */;
+				},
+				{
+					ProductGroup = 64BCD5381C03DD530087623E /* Products */;
+					ProjectRef = 64BCD5371C03DD530087623E /* 006 - Polymorphism-Virtual-Methods.xcodeproj */;
+				},
+				{
+					ProductGroup = 64BCD5531C03DE420087623E /* Products */;
+					ProjectRef = 64BCD5521C03DE420087623E /* 007 - Dynamic Allocation and Polymorphism.xcodeproj */;
+				},
+				{
+					ProductGroup = 64AC294B1C0E515900E612C3 /* Products */;
+					ProjectRef = 64AC294A1C0E515900E612C3 /* 007 - Functors.xcodeproj */;
+				},
+				{
+					ProductGroup = 6469D4F11C04D8BF00E8D58A /* Products */;
+					ProjectRef = 6469D4F01C04D8BF00E8D58A /* 008 - Clean code.xcodeproj */;
+				},
+				{
+					ProductGroup = 64AC29641C0E546B00E612C3 /* Products */;
+					ProjectRef = 64AC29631C0E546B00E612C3 /* 008 - Lambdas.xcodeproj */;
+				},
+				{
+					ProductGroup = 64AC297D1C0E594D00E612C3 /* Products */;
+					ProjectRef = 64AC297C1C0E594D00E612C3 /* 009 - Auto ptr.xcodeproj */;
+				},
+				{
+					ProductGroup = 6469D5301C05E6AE00E8D58A /* Products */;
+					ProjectRef = 6469D52F1C05E6AE00E8D58A /* 009 - recursion.xcodeproj */;
+				},
+				{
 					ProductGroup = 64BCD2431C0292C20087623E /* Products */;
 					ProjectRef = 64BCD2421C0292C20087623E /* 01 - Conditionals.xcodeproj */;
+				},
+				{
+					ProductGroup = 64AC29961C0E5F1100E612C3 /* Products */;
+					ProjectRef = 64AC29951C0E5F1100E612C3 /* 010 - Double free attack.xcodeproj */;
+				},
+				{
+					ProductGroup = 641403801C088766003E3FFD /* Products */;
+					ProjectRef = 6414037F1C088766003E3FFD /* 010 - Templates.xcodeproj */;
+				},
+				{
+					ProductGroup = 64AC29B21C0E623A00E612C3 /* Products */;
+					ProjectRef = 64AC29B11C0E623A00E612C3 /* 011 - Multiple Inheritance.xcodeproj */;
+				},
+				{
+					ProductGroup = 64AC28221C0CF47E00E612C3 /* Products */;
+					ProjectRef = 641403BC1C08EA50003E3FFD /* 011 - templates-specialization.xcodeproj */;
+				},
+				{
+					ProductGroup = 64AC27A61C0B16F900E612C3 /* Products */;
+					ProjectRef = 64AC27A51C0B16F900E612C3 /* 012 - templateClassesVsClassesTemplates.xcodeproj */;
+				},
+				{
+					ProductGroup = 64AC29CB1C0E63A000E612C3 /* Products */;
+					ProjectRef = 64AC29CA1C0E63A000E612C3 /* 012 - Virtual inheritance.xcodeproj */;
+				},
+				{
+					ProductGroup = 64AC27DF1C0B244000E612C3 /* Products */;
+					ProjectRef = 64AC27DE1C0B244000E612C3 /* 013 - Template function.xcodeproj */;
+				},
+				{
+					ProductGroup = 64AC29E41C0E6B2C00E612C3 /* Products */;
+					ProjectRef = 64AC29E31C0E6B2C00E612C3 /* 013 - Virtual destructor.xcodeproj */;
+				},
+				{
+					ProductGroup = 64AC27FB1C0B5E3100E612C3 /* Products */;
+					ProjectRef = 64AC27FA1C0B5E3100E612C3 /* 014 - Data Structures.xcodeproj */;
 				},
 				{
 					ProductGroup = 64BCD25C1C0292E60087623E /* Products */;
@@ -611,6 +1128,14 @@
 					ProductGroup = 64BCD4051C0294A50087623E /* Products */;
 					ProjectRef = 64BCD4041C0294A50087623E /* 18 - Data Struct Pointer.xcodeproj */;
 				},
+				{
+					ProductGroup = 6469D4A51C04B81A00E8D58A /* Products */;
+					ProjectRef = 6469D4A41C04B81A00E8D58A /* 19 - Type enum.xcodeproj */;
+				},
+				{
+					ProductGroup = 6469D4D81C04C6F400E8D58A /* Products */;
+					ProjectRef = 6469D4D71C04C6F400E8D58A /* 20 - Inline Functions.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -620,6 +1145,160 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		6414038F1C088767003E3FFD /* 010 - Templates */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "010 - Templates";
+			remoteRef = 6414038E1C088767003E3FFD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6469D4C31C04B81B00E8D58A /* 19 - Type enum */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "19 - Type enum";
+			remoteRef = 6469D4C21C04B81B00E8D58A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6469D4DC1C04C6F500E8D58A /* 20 - Inline Functions */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "20 - Inline Functions";
+			remoteRef = 6469D4DB1C04C6F500E8D58A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6469D4F51C04D8BF00E8D58A /* 008 - Clean code */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "008 - Clean code";
+			remoteRef = 6469D4F41C04D8BF00E8D58A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6469D53D1C05E6AF00E8D58A /* 009 - recursion */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "009 - recursion";
+			remoteRef = 6469D53C1C05E6AF00E8D58A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		64AC27B71C0B16FA00E612C3 /* 012 - templateClassesVsClassesTemplates */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "012 - templateClassesVsClassesTemplates";
+			remoteRef = 64AC27B61C0B16FA00E612C3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		64AC27E31C0B244100E612C3 /* 013 - Template function */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "013 - Template function";
+			remoteRef = 64AC27E21C0B244100E612C3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		64AC27FF1C0B5E3200E612C3 /* 014 - Data Structures */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "014 - Data Structures";
+			remoteRef = 64AC27FE1C0B5E3200E612C3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		64AC28321C0CF48300E612C3 /* 011 - templates-specialization */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "011 - templates-specialization";
+			remoteRef = 64AC28311C0CF48300E612C3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		64AC28611C0CF65900E612C3 /* 001 - Bitwise Operators */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "001 - Bitwise Operators";
+			remoteRef = 64AC28601C0CF65900E612C3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		64AC287A1C0D055B00E612C3 /* 003 - bitset */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "003 - bitset";
+			remoteRef = 64AC28791C0D055B00E612C3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		64AC28931C0D069900E612C3 /* 002 - bit Mask */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "002 - bit Mask";
+			remoteRef = 64AC28921C0D069900E612C3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		64AC28AC1C0D08C300E612C3 /* 004 - xor Encription */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "004 - xor Encription";
+			remoteRef = 64AC28AB1C0D08C300E612C3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		64AC28E11C0D163A00E612C3 /* 006 - Function Pointers */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "006 - Function Pointers";
+			remoteRef = 64AC28E01C0D163A00E612C3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		64AC29181C0E4E0400E612C3 /* 005 - Streams */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "005 - Streams";
+			remoteRef = 64AC29171C0E4E0400E612C3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		64AC294F1C0E515900E612C3 /* 007 - Functors */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "007 - Functors";
+			remoteRef = 64AC294E1C0E515900E612C3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		64AC29681C0E546C00E612C3 /* 008 - Lambdas */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "008 - Lambdas";
+			remoteRef = 64AC29671C0E546C00E612C3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		64AC29811C0E594D00E612C3 /* 009 - Auto ptr */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "009 - Auto ptr";
+			remoteRef = 64AC29801C0E594D00E612C3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		64AC299A1C0E5F1200E612C3 /* 010 - Double free attack */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "010 - Double free attack";
+			remoteRef = 64AC29991C0E5F1200E612C3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		64AC29B61C0E623B00E612C3 /* 011 - Multiple Inheritance */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "011 - Multiple Inheritance";
+			remoteRef = 64AC29B51C0E623B00E612C3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		64AC29CF1C0E63A100E612C3 /* 012 - Virtual inheritance */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "012 - Virtual inheritance";
+			remoteRef = 64AC29CE1C0E63A100E612C3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		64AC29E81C0E6B2D00E612C3 /* 013 - Virtual destructor */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "013 - Virtual destructor";
+			remoteRef = 64AC29E71C0E6B2D00E612C3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		64BCD2471C0292C30087623E /* 01 - Conditionals */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.executable";
@@ -779,6 +1458,27 @@
 			fileType = "compiled.mach-o.executable";
 			path = "004 - Dynamic Memory";
 			remoteRef = 64BCD4C11C03D8AC0087623E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		64BCD50E1C03DB640087623E /* 005 - Polymorphism */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "005 - Polymorphism";
+			remoteRef = 64BCD50D1C03DB640087623E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		64BCD53C1C03DD540087623E /* 006 - Polymorphism-Virtual-Methods */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "006 - Polymorphism-Virtual-Methods";
+			remoteRef = 64BCD53B1C03DD540087623E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		64BCD5571C03DE430087623E /* 007 - Dynamic Allocation and Polymorphism */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "007 - Dynamic Allocation and Polymorphism";
+			remoteRef = 64BCD5561C03DE430087623E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
