@@ -1,4 +1,4 @@
-# Advanced C/C++ Programming Tutorial with Xcode (WIP)
+# Advanced C/C++ Programming Tutorial with Xcode
 
 ##Indexes
 
