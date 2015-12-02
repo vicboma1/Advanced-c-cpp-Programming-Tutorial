@@ -69,6 +69,7 @@
 * [Double Free Attack](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#double-free-attack)
 * [Multiple Inheritance](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#multiple-inheritance)
 * [Virtual Inheritance](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#virtual-inheritance)
+* [Virtual Destructors](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#virtual-destructors)
 
 # Basics
 
@@ -3775,6 +3776,96 @@ Result
 ```
 1
 0x1002000b0
+```
+
+## Virtual Destructors
+```cpp
+#include <iostream>
+using namespace std;
+
+class Base
+{
+    
+public:
+    Base(){
+        cout << "Constructing Base" << endl;
+    }
+    
+    ~Base(){
+        cout << "Destroying Base" << endl;
+    }
+};
+
+class BaseVirtual
+{
+    
+public:
+    BaseVirtual(){
+        cout << "Constructing BaseVirtual" << endl;
+    }
+    
+   virtual ~BaseVirtual(){
+        cout << "Destroying BaseVirtual" << endl;
+    }
+};
+
+
+class Derive: public Base, public BaseVirtual
+{
+    
+public:
+    Derive(){
+        cout <<  "Constructing Derive"<< endl;
+    }
+    
+    ~Derive(){
+        cout << "Destroying Derive"<< endl;
+    }
+};
+
+
+void showExample013(){
+    Base *basePtr = new Derive();
+    delete basePtr;
+    
+    cout<< endl;
+
+    BaseVirtual *BaseVirtualPtr = new Derive();
+    delete BaseVirtualPtr;
+    
+    cout<< endl;
+    
+    auto_ptr<BaseVirtual> auto_BaseVirtualPtr(new Derive());
+    
+}
+
+int main(int argc, const char * argv[]) {
+    showExample013();
+    return 0;
+}
+```
+
+Result
+```
+Constructing Base
+Constructing BaseVirtual
+Constructing Derive
+Destroying Base
+
+Constructing Base
+Constructing BaseVirtual
+Constructing Derive
+Destroying Derive
+Destroying BaseVirtual
+Destroying Base
+
+Constructing Base
+Constructing BaseVirtual
+Constructing Derive
+Destroying Derive
+Destroying BaseVirtual
+Destroying Base
+
 ```
 
 
