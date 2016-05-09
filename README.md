@@ -1,5 +1,7 @@
 # Advanced C/C++ Programming Tutorial with Xcode
 
+![](http://www.lhernandez.org/wp-content/uploads/2016/02/c-logo.png)
+
 ##Indexes
 
 ###Basics
