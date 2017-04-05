@@ -2,9 +2,9 @@
 
 ![](http://www.lhernandez.org/wp-content/uploads/2016/02/c-logo.png)
 
-##Indexes
+## Indexes
 
-###Basics
+### Basics
 * [Hello World](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#hello-world)
 * [Contanst/Literals](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#contanstliterals)
 * [Conditionals](https://github.com/vicboma1/Advanced-c-cpp-Programming-Tutorial#conditionals)
@@ -107,7 +107,7 @@ Result
  You entered: 12
 ```
 
-##Contanst/Literals
+## Contanst/Literals
 Chars
 ```
 Escape sequence	Meaning
@@ -2345,7 +2345,7 @@ Pair < Hola Mundo , 75 >
 Pair < 99.9992 , 7.55004e+06 >
 ```
 
-##Templates Classes Vs Classes Templates
+## Templates Classes Vs Classes Templates
 ```
 Class template is a template used to generate template classes.
 Template class is an instance of a class template.
@@ -2419,9 +2419,9 @@ Result
 Casting '1 + 3' to 4
 ```
 
-##Data Structures
+## Data Structures
 
-##Sequences
+## Sequences
 
 ### Vector
 
